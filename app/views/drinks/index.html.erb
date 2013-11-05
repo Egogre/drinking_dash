@@ -1,1 +1,7 @@
-<%= @drinks %>
+<ul>
+<% @drinks.each do |drink|  %>
+  <li><%= drink.name %>: <%= number_to_currency drink.price %><br />
+  <%= drink.description %>
+  </li>
+<% end %>
+</ul>
