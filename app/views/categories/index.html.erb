@@ -1,8 +1,13 @@
 <ul class='categories'>
 <% @categories.each do |category|  %>
-<ul class='drink_type'>
-  <li><%= category.drink_type %>: <br />
-  </li>
+  <h4><%=category.drink_type %></h4>
+  <ul class='<%= category.drink_type %>'>
+    <% category.drinks.each do |drink| %>
+      <li>
+      <%= drink.name %>: <%= number_to_currency drink.price %> <br/>
+      <%= drink.description %>
+      </li>
+    <% end %>
 </ul>
 <% end %>
 </ul>

@@ -1,11 +1,14 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
+  name: PBR
   description: MyText
   price: 9.99
+  category_id: 1
 
 two:
-  name: MyString
+  name: Yeti
   description: MyText
   price: 9.99
+  category_id: 1
+
