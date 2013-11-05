@@ -3,9 +3,8 @@ require 'test_helper'
 class DrinkTest < ActiveSupport::TestCase
 
   def test_drink_has_category
-    assert_equal 0, Drink.all.count
-    Drink.create(name: "Diet Coke")
-    assert Drink.all.first.category
-    Drink.drop_table
+    beer_cat = Category.create(drink_type: "Beer")
+    beer = Drink.create(name: "Dale's Pale Ale", category_id: beer_cat.id)
+    assert_equal beer_cat.id, beer.category_id
   end
 end
