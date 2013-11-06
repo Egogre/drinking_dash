@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DrinkingDash</title>
+  <title>Drinking Dash</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div id="logo"> </div>
+  <nav id="header"> 
+    <ul>
+      <li>Header</li>
+    </ul>
+  </nav>
 
-<%= yield %>
+  <div id="content">
+    <%= yield %>
+  </div>
+
+  <nav id="footer"> 
+    <ul>
+      <li>Footer</li>
+    <ul>
+  </nav>
 
 </body>
 </html>
