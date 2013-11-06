@@ -8,7 +8,7 @@
 </head>
 <body>
   <div id="logo"> </div>
-  <nav id="header"> 
+  <nav id="header">
     <ul>
       <li><%= link_to 'Menu', categories_path %></li>
       <li><%= link_to 'Home', root_path %></li>
@@ -19,13 +19,14 @@
     Shopping Cart
   </div>
   <div id="content">
+    <p class="flash"><%= flash.notice %></p>
     <%= yield %>
   </div>
 
-  <nav id="footer"> 
+  <nav id="footer">
     <ul>
       <li>Footer</li>
-    <ul>
+    </ul>
   </nav>
 
 </body>

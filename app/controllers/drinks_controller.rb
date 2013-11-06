@@ -26,8 +26,6 @@ class DrinksController < ApplicationController
     end
   end
 
-  # PATCH/PUT /drinks/1
-  # PATCH/PUT /drinks/1.json
   def update
     respond_to do |format|
       if @drink.update(drink_params)
@@ -40,7 +38,6 @@ class DrinksController < ApplicationController
     end
   end
 
-
   private
     def set_drink
       @drink = Drink.find(params[:id])
@@ -50,6 +47,6 @@ class DrinksController < ApplicationController
       params.require(:drink).permit(:name, :description, :price, :category_id)
     end
 
-  
+
 
 end

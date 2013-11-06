@@ -76,12 +76,9 @@ GEM
       minitest-metadata (~> 0.4)
       minitest-rails (~> 0.9.1)
     multi_json (1.8.2)
-<<<<<<< HEAD
-    pg (0.17.0)
-=======
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
->>>>>>> ca361e469d3a374eece41f7513fb5314220047ba
+    pg (0.17.0)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -147,12 +144,9 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails
-<<<<<<< HEAD
-  pg
-=======
   launchy
   minitest-rails-capybara
->>>>>>> ca361e469d3a374eece41f7513fb5314220047ba
+  pg
   rails (= 4.0.1)
   rails_12factor
   sass-rails (~> 4.0.0)

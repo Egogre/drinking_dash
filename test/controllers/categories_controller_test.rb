@@ -1,5 +1,4 @@
 require 'test_helper'
-
 class CategoriesControllerTest < ActionController::TestCase
 
   def test_controller_should_get_index
@@ -19,6 +18,11 @@ class CategoriesControllerTest < ActionController::TestCase
       css_select 'ul.beer' do
         css_select'li', 2
       end
+  end
+
+  def test_show_is_valid
+    get :show, id: Category.all.first.id
+    assert_response 200
   end
 
 end
