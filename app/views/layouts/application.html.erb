@@ -10,10 +10,14 @@
   <div id="logo"> </div>
   <nav id="header"> 
     <ul>
-      <li>Header</li>
+      <li><%= link_to 'Menu', categories_path %></li>
+      <li><%= link_to 'Home', root_path %></li>
+      <!-- <li><%= link_to 'Contact', root_path %></li>           -->
     </ul>
   </nav>
-
+  <div id="sidebar">
+    Shopping Cart
+  </div>
   <div id="content">
     <%= yield %>
   </div>
