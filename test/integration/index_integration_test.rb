@@ -1,7 +1,7 @@
 require "test_helper"
 
 class IndexIntegrationTest < Capybara::Rails::TestCase
-  
+
   def test_it_exists
     visit root_path
     assert_equal 200, page.status_code
@@ -35,5 +35,15 @@ class IndexIntegrationTest < Capybara::Rails::TestCase
     end
   end
 
+  def test_login_works
+    visit root_path
+
+    within('#login') do
+      fill_in 'email', :with => 'user@example.com'
+      fill_in 'password', :with => 'password'
+    end
+
+    assert page.has_content?("Welcome user@example.com")
+  end
 
 end
