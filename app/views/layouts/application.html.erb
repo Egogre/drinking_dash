@@ -19,21 +19,29 @@
           <!-- <li><%= link_to 'Contact', root_path %></li>           -->
         </ul>
       </div>
-      <div id="login">
-      </div>
-    </nav>
-    <div id="sidebar">
-      Shopping Cart
-    </div>
-    <div id="content">
-      <p class="flash"><%= flash.notice %></p>
-      <%= yield %>
-    </div>
-    <nav id="footer">
-      <ul>
-        <li>Footer</li>
-      </ul>
-    </nav>
+  <div id="login">
+    <% if signed_in? %>
+      <li><%= link_to "Users", '#' %></li>
+      <li><%= link_to "Profile", current_user %></li>
+      <li><%= link_to "Sign Out", signout_path, method: "delete" %>
+      </li>
+    <% else %>
+      <%= render 'sessions/form' %>
+    <% end %>
   </div>
+  </nav>
+  <div id="sidebar">
+    Shopping Cart
+  </div>
+  <div id="content">
+    <p class="flash"><%= flash.notice %></p>
+    <%= yield %>
+  </div>
+
+  <nav id="footer">
+    <ul>
+      <li>Footer</li>
+    </ul>
+  </nav>
 </body>
 </html>
