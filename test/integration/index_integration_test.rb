@@ -39,11 +39,26 @@ class IndexIntegrationTest < Capybara::Rails::TestCase
     visit root_path
 
     within('#login') do
-      fill_in 'email', :with => 'user@example.com'
-      fill_in 'password', :with => 'password'
+      fill_in 'Email', :with => 'rolen@example.com'
+      fill_in 'Password', :with => 'password'
+      click_on 'Sign in'
+    end
+    # save_and_open_page
+    assert page.has_content?("Rolen")
+  end
+
+  def test_logout_works
+    visit root_path
+    within('#login') do
+      fill_in 'Email', :with => 'rolen@example.com'
+      fill_in 'Password', :with => 'password'
+      click_on 'Sign in'
     end
 
-    assert page.has_content?("Welcome user@example.com")
+    click_on("Sign Out")
+    assert_equal current_path, root_path
+
+
   end
 
 end

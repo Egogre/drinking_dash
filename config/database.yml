@@ -8,6 +8,7 @@ development:
   encoding: unicode
   database: drink_dash_development
   host: localhost
+  password: 
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -18,6 +19,7 @@ test:
   database: drink_dash_test
   pool: 5
   host: localhost
+  password:
 
 production:
   adapter: postgresql
