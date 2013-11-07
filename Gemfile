@@ -43,6 +43,11 @@ group :development, :test do
   gem "minitest-rails-capybara"
 end
 
+group :test do
+  gem 'minitest-colorize'
+  gem 'minitest-focus'
+end
+
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.1.2'
 

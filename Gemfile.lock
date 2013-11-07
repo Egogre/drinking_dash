@@ -66,6 +66,10 @@ GEM
       capybara (~> 2.1.0)
       minitest (~> 4.0)
       rake
+    minitest-colorize (0.0.5)
+      minitest (>= 2.0)
+    minitest-focus (1.1.0)
+      minitest (>= 4, < 6)
     minitest-metadata (0.4.0)
       minitest (~> 4.7)
     minitest-rails (0.9.2)
@@ -147,6 +151,8 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   launchy
+  minitest-colorize
+  minitest-focus
   minitest-rails-capybara
   pg
   rails (= 4.0.1)
