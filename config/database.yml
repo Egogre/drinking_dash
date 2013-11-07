@@ -18,6 +18,7 @@ test:
   database: drink_dash_test
   pool: 5
   host: localhost
+  password:
 
 production:
   adapter: postgresql
