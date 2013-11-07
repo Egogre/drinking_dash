@@ -39,4 +39,14 @@ class UserTest < ActiveSupport::TestCase
     end
   end
 
+  def test_it_should_respond_password_digest
+    User.create name: "user", email: "test@example.com", password: "stuff111", password_confirmation: "stuff111"
+    assert User.last.password_digest
+  end
+
+  def test_password_is_6c_chars
+    assert_raise(ActiveRecord::RecordInvalid) do
+      User.create! name: "user", email: "test@example.com", password: "f", password_confirmation: "f"
+    end
+  end
 end
