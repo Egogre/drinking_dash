@@ -23,12 +23,36 @@ nav#links {
 }
 
 nav#links ul {
+  font-size: 20px;
   list-style:none;
   text-align: center;
 }
 
 nav#links li {
   display:inline;
+}
+
+div#login {
+  
+}
+
+div#login ul {
+  position: center;
+  list-style:none;
+  text-align: center;
+}
+
+div#login li {
+  display:inline;
+}
+
+div#login a {
+  color: #fff;
+  font-size: 20px;
+}
+
+div#login a:hover {
+  color: #ddd;
 }
 
 div.container {
