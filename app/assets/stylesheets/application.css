@@ -1,11 +1,13 @@
 /*
 *= require_self
 *= require normalize
+*= require layout
+*= require sidebar
 */
 
 body,
 html {
-  padding: 10px;
+  min-width: 650px;
 }
 
 a {
@@ -15,49 +17,3 @@ a {
 a:hover { }
 a:visited { }
 a:active { }
-
-div#container {
-width: 700px;
-}
-
-div#logo {
-
-}
-
-nav#header {
-  
-}
-
-nav#header ul {
-  list-style:none;
-  text-align: center;
-}
-
-nav#header li {
-  display:inline;
-}
-
-div#content {
-  width: 65%;
-  float:left;
-}
-
-div#sidebar {
-  width: 30%;
-  margin-left: 70%;
-
-}
-
-nav#footer {
-  clear: both;
-}
-
-nav#footer ul {
-  list-style:none;
-  text-align: center;
-}
-
-nav#footer li {
-  display:inline;
-}
-
