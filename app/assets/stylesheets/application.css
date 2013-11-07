@@ -16,8 +16,8 @@ a:hover { }
 a:visited { }
 a:active { }
 
-div#sidebar {
-
+div#container {
+width: 700px;
 }
 
 div#logo {
@@ -37,12 +37,19 @@ nav#header li {
   display:inline;
 }
 
-#content {
-  
+div#content {
+  width: 65%;
+  float:left;
+}
+
+div#sidebar {
+  width: 30%;
+  margin-left: 70%;
+
 }
 
 nav#footer {
-  
+  clear: both;
 }
 
 nav#footer ul {

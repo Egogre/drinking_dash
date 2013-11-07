@@ -8,31 +8,32 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div id="logo"> </div>
-  <nav id="header">
-    <div>
-    <ul>
-      <li><%= link_to 'Menu', categories_path %></li>
-      <li><%= link_to 'Home', root_path %></li>
-      <!-- <li><%= link_to 'Contact', root_path %></li>           -->
-    </ul>
+  <div id="container">
+    <div id="logo"> 
+    </div>
+    <nav id="header">
+      <div>
+        <ul>
+          <li><%= link_to 'Menu', categories_path %></li>
+          <li><%= link_to 'Home', root_path %></li>
+          <!-- <li><%= link_to 'Contact', root_path %></li>           -->
+        </ul>
+      </div>
+      <div id="login">
+      </div>
+    </nav>
+    <div id="sidebar">
+      Shopping Cart
+    </div>
+    <div id="content">
+      <p class="flash"><%= flash.notice %></p>
+      <%= yield %>
+    </div>
+    <nav id="footer">
+      <ul>
+        <li>Footer</li>
+      </ul>
+    </nav>
   </div>
-  <div id="login">
-  </div>
-  </nav>
-  <div id="sidebar">
-    Shopping Cart
-  </div>
-  <div id="content">
-    <p class="flash"><%= flash.notice %></p>
-    <%= yield %>
-  </div>
-
-  <nav id="footer">
-    <ul>
-      <li>Footer</li>
-    </ul>
-  </nav>
-
 </body>
 </html>
