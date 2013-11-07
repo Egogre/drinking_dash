@@ -1,11 +1,13 @@
 /*
 *= require_self
 *= require normalize
+*= require layout
+*= require sidebar
 */
 
 body,
 html {
-  padding: 10px;
+  min-width: 650px;
 }
 
 a {
@@ -15,42 +17,3 @@ a {
 a:hover { }
 a:visited { }
 a:active { }
-
-div#sidebar {
-
-}
-
-div#logo {
-
-}
-
-nav#header {
-  
-}
-
-nav#header ul {
-  list-style:none;
-  text-align: center;
-}
-
-nav#header li {
-  display:inline;
-}
-
-#content {
-  
-}
-
-nav#footer {
-  
-}
-
-nav#footer ul {
-  list-style:none;
-  text-align: center;
-}
-
-nav#footer li {
-  display:inline;
-}
-

@@ -8,39 +8,51 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div id="logo"> </div>
-  <nav id="header">
-    <div>
+  <header id="page_header" role="banner">
+    <nav id="utility">
+      <div id="login">
+        <% if signed_in? %>
+          <li>
+            <%= link_to "Users", '#' %>
+          </li>
+          <li>
+            <%= link_to "Profile", current_user %>
+          </li>
+          <li>
+            <%= link_to "Sign Out", signout_path, method: "delete" %>
+          </li>
+        <% else %>
+          <%= render 'sessions/form' %>
+        <% end %>
+      </div>
+    </nav>
+  <%= link_to(image_tag("logo.png", alt: "Logo", id: "logo"), root_url, title: "Dashboard") %>
+  </header>
+  <nav id="links">
     <ul>
       <li><%= link_to 'Menu', categories_path %></li>
       <li><%= link_to 'Home', root_path %></li>
       <!-- <li><%= link_to 'Contact', root_path %></li>           -->
     </ul>
-  </div>
-  <div id="login">
-    <% if signed_in? %>
-      <li><%= link_to "Users", '#' %></li>
-      <li><%= link_to "Profile", current_user %></li>
-      <li><%= link_to "Sign Out", signout_path, method: "delete" %>
-      </li>
-    <% else %>
-      <%= render 'sessions/form' %>
-    <% end %>
-  </div>
   </nav>
-  <div id="sidebar">
-    Shopping Cart
+  <div class="container">
+    <section id="content">
+      <p class="flash"><%= flash.notice %></p>
+      <%= yield %>
+    </section>
+    <section id="sidebar">
+      <section id="recent_activity">
+        <header><h1 class="ir" id="recent">Shopping Cart</h1></header>
+      </section>
+    </section>
   </div>
-  <div id="content">
-    <p class="flash"><%= flash.notice %></p>
-    <%= yield %>
-  </div>
-
-  <nav id="footer">
-    <ul>
-      <li>Footer</li>
-    </ul>
-  </nav>
-
+  <%= render 'layouts/footer' %>
 </body>
 </html>
+    
+
+
+
+
+  
+
