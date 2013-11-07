@@ -49,4 +49,15 @@ class UserTest < ActiveSupport::TestCase
       User.create! name: "user", email: "test@example.com", password: "f", password_confirmation: "f"
     end
   end
+
+  def test_remember_token_is_created_on_save
+    user = User.new name: "user", email: "test@example.com", password: "stuff111", password_confirmation: "stuff111"
+    refute user.remember_token
+    user.save
+    assert user.remember_token 
+  end
+
+  def test_it_signs_in_up_account_creation
+    
+  end    
 end
