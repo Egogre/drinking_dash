@@ -43,16 +43,21 @@
     <section id="sidebar">
       <section id="recent_activity">
         <header><h1 class="ir" id="recent">Shopping Cart</h1></header>
+	<ul>
+	<% current_order.order_items.each do |item| %>
+	  <li> <%= item.drink.name %>: <%= number_to_currency item.drink.price %></li>
+	<% end %>
+	</ul>
       </section>
     </section>
   </div>
   <%= render 'layouts/footer' %>
 </body>
 </html>
-    
 
 
 
 
-  
+
+
 

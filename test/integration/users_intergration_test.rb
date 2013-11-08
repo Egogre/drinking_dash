@@ -20,9 +20,9 @@ class IndexIntegrationTest < Capybara::Rails::TestCase
   def test_user_is_prompted_to_sign_in
     visit root_path
     assert page.has_content?("Sign up")
-  end  
+  end
 
-  
 
-  
+
+
 end

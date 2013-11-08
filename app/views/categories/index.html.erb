@@ -3,9 +3,10 @@
   <h4><%=category.drink_type %></h4>
   <ul class='<%= category.drink_type %>'>
     <% category.drinks.each do |drink| %>
-      <li>
+      <li id="drink_<%=drink.id %>">
       <%= drink.name %>: <%= number_to_currency drink.price %> <br/>
       <%= drink.description %>
+      <%= button_to "Add to cart", order_items_path(drink_id: drink.id) %>
       </li>
     <% end %>
 </ul>

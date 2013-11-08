@@ -4,11 +4,11 @@ one:
   name: PBR
   description: MyText
   price: 9.99
-  category_id: 1
+  category: one
 
 two:
   name: Yeti
   description: MyText
   price: 9.99
-  category_id: 1
+  category: one
 

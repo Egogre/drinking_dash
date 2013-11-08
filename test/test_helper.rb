@@ -4,6 +4,7 @@ require 'rails/test_help'
 require "minitest/rails/capybara"
 require 'minitest/focus'
 require 'minitest/colorize'
+require 'pry'
 
 class ActiveSupport::TestCase
   ActiveRecord::Migration.check_pending!

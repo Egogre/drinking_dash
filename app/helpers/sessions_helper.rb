@@ -20,6 +20,9 @@ module SessionsHelper
     @current_user ||= User.find_by(remember_token: remember_token)
   end
 
+  def current_order
+    @current_order ||= Order.find_or_create_by(id: session[:order_id])
+  end
 
 
 end
