@@ -1,0 +1,24 @@
+nav#main_nav {
+  padding: 0;
+  border-bottom: 10px solid #4c2719;
+  margin-bottom: 10px;
+  ul {
+    font-size: 19px;
+    text-align: center;
+    margin: 0;
+  }
+  li {
+    background: #fff;
+    display: inline-block;
+    margin: 0px 20px 0px 20px;
+    padding: 6px 16px;
+    border-radius: 10px;
+
+    a,
+    a:link,
+    a:visited {
+      color: #1e2122;
+      text-decoration: none;
+    }
+  }
+}

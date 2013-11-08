@@ -1,13 +1,14 @@
 /*
 *= require_self
-*= require normalize
 *= require layout
+*= require navigation
 *= require sidebar
+*= require normalize
 */
 
 body,
 html {
-  min-width: 650px;
+  min-width: 800px;
 }
 
 a {

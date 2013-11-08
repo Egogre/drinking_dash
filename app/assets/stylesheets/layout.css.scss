@@ -11,6 +11,7 @@ header#page_header {
   margin-bottom: 10px;
   overflow: hidden;
   padding: 10px 20px;
+  margin-bottom: 0;
 }
 
 nav#utility {
@@ -18,22 +19,9 @@ nav#utility {
   font-size: 0.8em;
 }
 
-nav#links {
-  
-}
-
-nav#links ul {
-  font-size: 20px;
-  list-style:none;
-  text-align: center;
-}
-
-nav#links li {
-  display:inline;
-}
 
 div#login {
-  
+
 }
 
 div#login ul {
@@ -56,6 +44,7 @@ div#login a:hover {
 }
 
 div.container {
+  
   min-width: 300px;
   overflow: hidden;
   padding: 0 20px;
@@ -72,12 +61,16 @@ section#sidebar {
 }
 
 footer#page_footer {
+  position:absolute;
+  bottom: 0;
+  width: 100%;
   background-color: #807c77;
   border-bottom: 10px solid #4c2719;
   color: #fff;
   font-size: 0.7em;
-  height: 50px;
-  padding: 10px 20px;
+  height: 40px;
+  padding-top: 5px;
+  margin-top: 10px;
 }
 
 footer ul {
@@ -90,6 +83,10 @@ footer li {
   display: inline;
   margin: 0;
   padding: 5px 10px;
+}
+
+footer p {
+  text-align: center;
 }
 
 
