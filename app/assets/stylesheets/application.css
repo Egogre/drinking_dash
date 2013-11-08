@@ -4,6 +4,7 @@
 *= require navigation
 *= require sidebar
 *= require normalize
+*= require static
 */
 
 body,
