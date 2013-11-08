@@ -1,3 +1,4 @@
+<% provide(:title, 'Drinks') %>
 <ul>
 <% @drinks.each do |drink|  %>
   <li><%= drink.name %>: <%= number_to_currency drink.price %><br />

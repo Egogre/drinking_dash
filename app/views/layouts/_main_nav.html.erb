@@ -1,0 +1,12 @@
+<!-- This currently doesn't work but is being kept in case it can be brought back in -->
+
+<% content_for :main_navigation do %>
+  <nav id="main_nav" role="navigation">
+    <ul>
+      <li><%= link_to 'Home', root_path %></li>
+      <li><%= link_to 'Menu', categories_path %></li>
+      <li><%= link_to 'About', about_path %></li>
+      <li><%= link_to 'Contact', contact_path %></li>
+    </ul>
+  </nav>
+<% end %>

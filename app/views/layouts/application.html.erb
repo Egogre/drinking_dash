@@ -2,12 +2,13 @@
 <html>
 <head>
   <meta charset= "utf-8">
-  <title>Drinking Dash</title>
+  <title>Dive Bar<% if yield(:title) != "" %> | <%= yield(:title) %> <% end %></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div id="bigcon">
   <header id="page_header" role="banner">
     <nav id="utility">
       <div id="login">
@@ -26,13 +27,14 @@
         <% end %>
       </div>
     </nav>
-  <%= link_to(image_tag("logo.png", alt: "Logo", id: "logo"), root_url, title: "Dashboard") %>
+  <%= link_to(image_tag("/assets/logo.png", alt: "Logo", id: "logo"), root_url, title: "Dashboard") %>
   </header>
-  <nav id="links">
+  <nav id="main_nav" role="navigation">
     <ul>
-      <li><%= link_to 'Menu', categories_path %></li>
       <li><%= link_to 'Home', root_path %></li>
-      <!-- <li><%= link_to 'Contact', root_path %></li>           -->
+      <li><%= link_to 'Menu', categories_path %></li>
+      <li><%= link_to 'About', about_path %></li>
+      <li><%= link_to 'Contact', contact_path %></li>
     </ul>
   </nav>
   <div class="container">
@@ -52,6 +54,7 @@
     </section>
   </div>
   <%= render 'layouts/footer' %>
+</div>
 </body>
 </html>
 

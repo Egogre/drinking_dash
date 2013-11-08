@@ -1,4 +1,6 @@
 DrinkingDash::Application.routes.draw do
+  match '/contact', to: 'static_pages#contact', via: 'get'
+  match '/about', to: 'static_pages#about', via: 'get'
   get "users/new"
   resources :drinks
   resources :categories
