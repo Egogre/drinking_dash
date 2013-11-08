@@ -5,6 +5,7 @@
 }
 
 header#page_header {
+  min-width: 600px;
   background: #534f4b;
   color: #fff;
   height: 150px;
@@ -44,18 +45,20 @@ div#login a:hover {
 }
 
 div.container {
-  
   min-width: 300px;
   overflow: hidden;
-  padding: 0 20px;
+  padding: 10px 20px;
 }
 
 section#content {
-  float:left;
+  float: left;
+  width: 50%;
+  min-width: 300px;
 }
 
 section#sidebar {
   float:right;
+  width: 50%;
   margin-right: -20px;
   width: 350px;
 }
@@ -69,6 +72,7 @@ footer#page_footer {
   color: #fff;
   font-size: 0.7em;
   height: 40px;
+  margin-top: 5px;
   padding-top: 5px;
   margin-top: 10px;
 }
