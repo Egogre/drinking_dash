@@ -25,4 +25,17 @@ class ShoppingCartIntegrationTest < Capybara::Rails::TestCase
       assert page.has_content?("2"), "I need two drinks!"
     end
   end
+
+  def test_shopping_cart_clears
+    visit root_path
+    within "#drink_#{Drink.all.first.id}"do
+      click_on "Add to cart"
+      click_on "Add to cart"
+    end
+    click_on "Empty Cart"
+    within "#sidebar" do
+      refute page.has_content?("#{Drink.all.first.name}"), "I wanted to clear my order"
+    end
+  end
+
 end

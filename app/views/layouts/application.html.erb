@@ -50,6 +50,7 @@
 	  <li> <%= item.drink.name %>: <%= item.quantity %> x  <%= number_to_currency item.drink.price %></li>
 	<% end %>
 	</ul>
+  <%= button_to "Empty Cart", order_path(current_order), method: "delete" %>
       </section>
     </section>
   </div>

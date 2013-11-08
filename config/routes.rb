@@ -7,6 +7,7 @@ DrinkingDash::Application.routes.draw do
   resources :users
   resources :order_items
   resources :sessions, only: [:new, :create, :destroy]
+  resources :orders
   root 'categories#index'
   match '/signup', to: 'users#new', via: 'get'
   match '/signin', to: 'sessions#new', via: 'get'
