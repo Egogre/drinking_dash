@@ -17,6 +17,7 @@ class CategoriesController < ApplicationController
 
     if @category.new_record?
       redirect_to category_path(@category)
+      flash.notice = "New Category, '#{@category.drink_type}', Created!"
     else
       redirect_to new_category_path, notice: "You messed up son!"
     end

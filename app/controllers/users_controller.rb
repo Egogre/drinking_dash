@@ -13,6 +13,7 @@ class UsersController < ApplicationController
     if @user.save
       sign_in(@user)
       redirect_to root_path
+      flash.notice = "Welcome to Dive Bar, #{@user.name}! Your account has been created."
     else
       render "new"
     end

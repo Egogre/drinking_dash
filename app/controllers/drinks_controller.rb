@@ -19,6 +19,7 @@ class DrinksController < ApplicationController
       if @drink.save
         format.html { redirect_to drinks_path, notice: 'Drink was successfully created.' }
         format.json { render action: 'show', status: :created, location: @drink }
+        flash.notice = "New Drink, '#{@drink.name}', Created!"
       else
         format.html { render action: 'new' }
         format.json { render json: @drink.errors, status: :unprocessable_entity }
