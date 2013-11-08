@@ -45,7 +45,7 @@
         <header><h1 class="ir" id="recent">Shopping Cart</h1></header>
 	<ul>
 	<% current_order.order_items.each do |item| %>
-	  <li> <%= item.drink.name %>: <%= number_to_currency item.drink.price %></li>
+	  <li> <%= item.drink.name %>: <%= item.quantity %> x  <%= number_to_currency item.drink.price %></li>
 	<% end %>
 	</ul>
       </section>

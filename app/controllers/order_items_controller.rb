@@ -4,7 +4,8 @@ class OrderItemsController < ApplicationController
   end
 
   def create
-    @order_item = OrderItem.new(drink_id: params[:drink_id], order_id: @order.id)
+    @order_item = OrderItem.find_or_initialize_by(drink_id: params[:drink_id], order_id: @order.id)
+      @order_item.quantity += 1
     if @order_item.save
       redirect_to root_path, notice: "#{@order_item.drink.name} added to cart"
     else
