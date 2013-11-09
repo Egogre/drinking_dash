@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
       redirect_to user, notice: "Welcome back to Dive Bar, #{user.name}! What can we do for you today?"
     else
       # flash.now[:error] = 'Invalid email/password combination'
-      render 'new', notice: "Invalid Email/Password combination"
+      redirect_to root_path, notice: "***Invalid Email/Password combination***"
     end
   end
 
