@@ -2,9 +2,13 @@
 # http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  drink_id: 1
-  order_id: 1
+  id: 2
+  drink: one
+  order: one
+  quantity: 1
 
 two:
-  drink_id: 1
-  order_id: 1
+  id: 1
+  drink: two
+  order: two
+  quantity: 2

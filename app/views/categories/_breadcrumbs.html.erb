@@ -1,0 +1,9 @@
+<nav id="breadcrumbs" >
+  <% @categories.each do |category| %>
+  <ul>
+    <%= link_to(category) do %>
+    <li><%=category.drink_type%></li>
+    <% end %>
+  </ul>
+  <% end %>
+</nav>

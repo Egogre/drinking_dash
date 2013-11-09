@@ -15,7 +15,7 @@ class UsersController < ApplicationController
       redirect_to root_path
       flash.notice = "Welcome to Dive Bar, #{@user.name}! Your account has been created."
     else
-      render "new"
+      redirect_to root_path, notice: "Unable to create account"
     end
   end
 

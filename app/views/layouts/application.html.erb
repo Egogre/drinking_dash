@@ -31,10 +31,18 @@
   </header>
   <nav id="main_nav" role="navigation">
     <ul>
-      <li><%= link_to 'Home', root_path %></li>
-      <li><%= link_to 'Menu', categories_path %></li>
-      <li><%= link_to 'About', about_path %></li>
-      <li><%= link_to 'Contact', contact_path %></li>
+      <%= link_to(root_path) do %>
+      <li>Home</li>
+      <% end %>
+      <%= link_to(categories_path) do %>
+      <li>Menu</li>
+      <% end %>
+      <%= link_to(about_path) do %>
+      <li>About</li>
+      <% end %>
+      <%= link_to(contact_path) do %>
+      <li>Contact</li>
+      <% end %>
     </ul>
   </nav>
   <div class="container">
@@ -47,10 +55,12 @@
         <header><h1 class="ir" id="recent">Shopping Cart</h1></header>
 	<ul>
 	<% current_order.order_items.each do |item| %>
-	  <li> <%= item.drink.name %>: <%= item.quantity %> x  <%= number_to_currency item.drink.price %></li>
+	  <li> <%= item.drink.name %>: <%= item.quantity %> x  <%= number_to_currency item.drink.price %> <%= number_to_currency item.subtotal %></li>
 	<% end %>
+  <h3> Grand Total = <%= number_to_currency current_order.grand_total %> </h3>
 	</ul>
   <%= button_to "Empty Cart", order_path(current_order), method: "delete" %>
+
       </section>
     </section>
   </div>

@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20131109210410) do
     t.string   "drink_type"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "image_url",  default: "default.jpg"
   end
 
   create_table "drinks", force: true do |t|

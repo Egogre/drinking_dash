@@ -1,16 +1,16 @@
 /*
-*= require_self
 *= require layout
 *= require navigation
 *= require sidebar
 *= require normalize
 *= require static
+*= require_self
 */
 
 body,
 html {
   height: 100%;
-  min-width: 500px;
+  min-width: 650px;
 }
 
 body {
@@ -23,7 +23,7 @@ body {
   min-height:100%;
   min-width: 800px;
   margin: 0 auto 0 auto;
-  padding-bottom:60px;   /* Height of the footer */
+  padding-bottom: 45px;   /* Height of the footer */
 }
 
 
@@ -31,6 +31,6 @@ a {
   text-decoration:none;
 }
 
-a:hover { }
+a:hover { color: #aaa; }
 a:visited { }
 a:active { }
