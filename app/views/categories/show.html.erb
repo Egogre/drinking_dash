@@ -1,8 +1,6 @@
 <% provide(:title, 'Categories') %>
-<h1><%= @category.drink_type %></h1>
-<ul>
-<% @category.drinks.each do |drink| %>
-  <li><%= drink.name %></li>
-<% end %>
-</ul>
-<%= link_to "Categories", categories_path %>
+
+<%= render 'list', params[@category] %>
+<br>
+<br>
+<%= link_to "Return to Categories", categories_path %>
