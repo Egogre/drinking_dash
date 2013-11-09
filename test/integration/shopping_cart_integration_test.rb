@@ -3,7 +3,7 @@ require "test_helper"
 class ShoppingCartIntegrationTest < Capybara::Rails::TestCase
 
   def test_a_non_user_can_something_to_cart
-    visit root_path
+    visit categories_path
     within "#drink_#{Drink.all.first.id}" do
       click_on "Add to cart"
     end
@@ -14,7 +14,7 @@ class ShoppingCartIntegrationTest < Capybara::Rails::TestCase
   end
 
   def test_a_non_user_can_two_things_tocart
-    visit root_path
+    visit categories_path
     within "#drink_#{Drink.all.first.id}"do
       click_on "Add to cart"
       click_on "Add to cart"
@@ -27,7 +27,7 @@ class ShoppingCartIntegrationTest < Capybara::Rails::TestCase
   end
 
   def test_shopping_cart_clears
-    visit root_path
+    visit categories_path
     within "#drink_#{Drink.all.first.id}"do
       click_on "Add to cart"
       click_on "Add to cart"
