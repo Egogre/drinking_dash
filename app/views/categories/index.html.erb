@@ -1,4 +1,5 @@
 <% provide(:title, 'Categories') %>
+<%= render 'breadcrumbs' %>
 <ul class='categories'>
 <% @categories.each do |category|  %>
   <%= link_to(category) do %>

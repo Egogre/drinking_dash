@@ -1,6 +1,7 @@
 <% provide(:title, 'Categories') %>
+<%= render 'breadcrumbs' %>
 
-<%= render 'list', params[@category] %>
+<%= render 'list' %>
 <br>
 <br>
 <%= link_to "Return to Categories", categories_path %>

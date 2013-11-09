@@ -2,7 +2,6 @@ nav#main_nav {
   padding: 5px;
   border-bottom: 10px solid #4c2719;
   margin: 0;
-  padding: 0px;
   text-align: center;
 }
 
@@ -20,3 +19,25 @@ nav#main_nav a,
       color: #1e2122;
       text-decoration: none;
     }
+
+nav#breadcrumbs {
+  background: #ddd;
+  text-align: center;
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+
+  }
+  li {
+  margin: 0 2px;
+  padding: 10px 16px;
+  a,
+  a:link,
+  a:visited {
+  padding-right: 12px;
+  color: #000;
+  }
+  }
+}
