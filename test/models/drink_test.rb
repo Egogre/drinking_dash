@@ -49,4 +49,21 @@ class DrinkTest < ActiveSupport::TestCase
       Drink.create! name: "Tea", description: "Ok, I guess", price: -1
     end
   end
+
+  def test_drink_name_has_to_be_unqiue
+    assert_raise ActiveRecord::RecordInvalid do
+      Drink.create! name: "Tea", description: "Ok, I guess", price: 1
+      Drink.create! name: "Tea", description: "Ok, I guess", price: 1
+    end
+  end
+
+  def test_drink_image_url_is_valid
+    assert_raise ActiveRecord::RecordInvalid do
+      Drink.create! name: "Tea", description: "Ok, I guess", price: 1, image_url: "asdasdas"
+    end
+  end
+
+  def test_drink_has_valid_url
+    Drink.create! name: "Tea", description: "Ok, I guess", price: 1, image_url: "http://www.amazon.com/stuff"
+  end
 end
