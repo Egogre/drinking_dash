@@ -9,6 +9,6 @@ one:
 two:
   name: Yeti
   description: MyText
-  price: 9.99
+  price: 5.00
   category: one
 

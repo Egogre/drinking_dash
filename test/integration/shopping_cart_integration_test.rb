@@ -38,4 +38,29 @@ class ShoppingCartIntegrationTest < Capybara::Rails::TestCase
     end
   end
 
+  def test_it_gives_subtotal_for_line
+    visit root_path
+    within "#drink_#{Drink.all.first.id}"do
+      click_on "Add to cart"
+      click_on "Add to cart"
+    end
+    within "#sidebar" do
+      assert page.has_content?("$10.00"), "subtotal isn't showing"
+    end
+  end
+
+  def test_it_gives_grand_total
+    visit root_path
+    within "#drink_#{Drink.all.first.id}"do
+      click_on "Add to cart"
+      click_on "Add to cart"
+    end
+    within "#drink_#{Drink.all.last.id}"do
+      click_on "Add to cart"
+    end
+    within "#sidebar" do
+      assert page.has_content?("$19.99"), "grand total isn't showing"
+    end
+  end
+
 end
