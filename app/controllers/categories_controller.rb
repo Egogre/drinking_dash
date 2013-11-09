@@ -30,6 +30,6 @@ class CategoriesController < ApplicationController
   end
 
   def category_params
-    params.require(:category).permit(:drink_type)
+    params.require(:category).permit(:drink_type, :image_url)
   end
 end

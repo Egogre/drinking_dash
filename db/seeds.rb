@@ -1,8 +1,8 @@
-categories =  [ { drink_type: "beer"},
-       { drink_type: "cocktails" },
-       { drink_type: "wine" },
-       { drink_type: "shots"},
-       { drink_type: "soft drinks"}]
+categories =  [ { drink_type: "beer", image_url: "beer.png"},
+       { drink_type: "cocktails", image_url: "cocktail.png"},
+       { drink_type: "wine", image_url: "cask.png"},
+       { drink_type: "shots", image_url: "shotglass.png"},
+       { drink_type: "soft drinks", image_url: "soda.png"}]
 
 drinks = [ { name: "PBR", description: "The best beer ever!", price: 7.99, category_id: 1 },
      { name: "Guinness", description: "Brilliant!", price: 5.00, category_id: 1 },
@@ -32,7 +32,7 @@ users = [ { name: "Don", email: "madman@example.com", password: "password", pass
  { name: "Jeff", email: "demo+jeff@jumpstartlab.com", password: "password", password_confirmation: "password"}]
 
 categories.each do |category|
-  Category.find_or_create_by_drink_type!(category[:drink_type])
+  Category.find_or_create_by_drink_type!(category)
 end
 
 drinks.each do |drink|

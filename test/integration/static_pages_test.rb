@@ -23,6 +23,24 @@ class StaticPagesTest < Capybara::Rails::TestCase
     assert_equal '/contact', current_path
   end
 
+  def test_home_page_has_content
+    visit '/'
+    assert page.has_content?('We Are')
+  end
+
+  def test_home_page_link_works_from_contact_page
+    visit root_path
+    click_on 'Contact'
+    click_on 'Home'
+    assert_equal '/', current_path
+  end
+
+  def test_home_page_is_root_page
+    visit root_path
+    assert page.has_content?('We Are')
+  end
+
+
 
 
 end

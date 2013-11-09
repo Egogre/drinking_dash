@@ -1,7 +1,7 @@
 <% provide(:title, 'Categories') %>
 <ul class='categories'>
 <% @categories.each do |category|  %>
-  <h4><%=category.drink_type %></h4>
+  <h1><%= image_tag "#{category.image_url}" %> <%=category.drink_type %></h1>
   <ul class='<%= category.drink_type %>'>
     <% category.drinks.each do |drink| %>
       <li id="drink_<%=drink.id %>">
