@@ -39,7 +39,7 @@ class ShoppingCartIntegrationTest < Capybara::Rails::TestCase
   end
 
   def test_it_gives_subtotal_for_line
-    visit root_path
+    visit categories_path
     within "#drink_#{Drink.all.first.id}"do
       click_on "Add to cart"
       click_on "Add to cart"
@@ -50,7 +50,7 @@ class ShoppingCartIntegrationTest < Capybara::Rails::TestCase
   end
 
   def test_it_gives_grand_total
-    visit root_path
+    visit categories_path
     within "#drink_#{Drink.all.first.id}"do
       click_on "Add to cart"
       click_on "Add to cart"
