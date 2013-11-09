@@ -1,0 +1,9 @@
+<h1><%= image_tag "#{@category.image_url}" %> <%=@category.drink_type %></h1>
+  <ul class='<%= @category.drink_type %>'>
+    <% @category.drinks.each do |drink| %>
+      <li id="drink_<%=drink.id %>">
+      <%= drink.name %>: <%= number_to_currency drink.price %> <br/>
+      <%= drink.description %>
+      <%= button_to "Add to cart", order_items_path(drink_id: drink.id) %>
+      </li>
+    <% end %>
