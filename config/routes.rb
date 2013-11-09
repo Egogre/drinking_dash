@@ -2,6 +2,7 @@ DrinkingDash::Application.routes.draw do
   match '/contact', to: 'static_pages#contact', via: 'get'
   match '/about', to: 'static_pages#about', via: 'get'
   match '/home', to: 'static_pages#home', via: 'get'
+  match '/code', :to => redirect("https://github.com/Egogre/drinking_dash"), via: 'get'
   get "users/new"
   resources :drinks
   resources :categories
