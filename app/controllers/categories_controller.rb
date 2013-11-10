@@ -1,5 +1,6 @@
 class CategoriesController < ApplicationController
-  before_action :set_category, only: [:show]
+  before_action :set_category, only: [:show, :edit, :update]
+  before_action :admin_authorization, only: [:edit, :update, :new, :create]
 
   def index
     @categories = Category.all
@@ -13,10 +14,26 @@ class CategoriesController < ApplicationController
     @category = Category.new
   end
 
+  def edit
+  end
+
+  def update
+    respond_to do |format|
+      if @category.update(category_params)
+        format.html { redirect_to @category, notice: 'Category was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: 'edit' }
+        format.json { render json: @category.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
   def create
     @category = Category.new(category_params)
 
     if @category.new_record?
+      @category.save
       redirect_to category_path(@category)
       flash.notice = "New Category, '#{@category.drink_type}', Created!"
     else
