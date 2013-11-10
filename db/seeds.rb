@@ -29,7 +29,8 @@ users = [ { name: "Don", email: "madman@example.com", password: "password", pass
  { name: "Jim", email: "lizard.king@example.com", password: "password", password_confirmation: "password"},
  { name: "F. Scott", email: "DaGreatFtzy@example.com", password: "password", password_confirmation: "password"},
  { name: "Franklin Webber", email: "demo+franklin@jumpstartlab.com", password: "password", password_confirmation: "password"},
- { name: "Jeff", email: "demo+jeff@jumpstartlab.com", password: "password", password_confirmation: "password"}]
+ { name: "Jeff", email: "demo+jeff@jumpstartlab.com", password: "password", password_confirmation: "password", display_name: "j3"},
+ { name: "Katrina Owen", email: "demo+katrina@jumpstartlab.com", password: "password", password_confirmation: "password", display_name: "kytrinyx", admin_role: true }]
 
 categories.each do |category|
   Category.find_or_create_by_drink_type!(category)

@@ -1,11 +1,12 @@
 class DrinksController < ApplicationController
+  before_action :set_drink, only: [:show, :edit, :update]
+  before_action :admin_authorization, only: [:edit, :update, :new, :create]
 
   def index
     @drinks = Drink.all
   end
 
   def show
-
   end
 
   def new
@@ -27,6 +28,9 @@ class DrinksController < ApplicationController
     end
   end
 
+  def edit
+  end
+
   def update
     respond_to do |format|
       if @drink.update(drink_params)
@@ -45,7 +49,7 @@ class DrinksController < ApplicationController
     end
 
     def drink_params
-      params.require(:drink).permit(:name, :description, :price, :category_id)
+      params.require(:drink).permit(:name, :description, :price, :category_id, :image_url)
     end
 
 

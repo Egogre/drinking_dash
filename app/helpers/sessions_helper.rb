@@ -24,5 +24,9 @@ module SessionsHelper
     @current_order ||= Order.find_or_create_by(id: session[:order_id])
   end
 
+  def admin?
+    self.current_user.present? && self.current_user.admin_role
+  end
+
 
 end

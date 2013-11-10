@@ -4,6 +4,7 @@ DrinkingDash::Application.routes.draw do
   match '/home', to: 'static_pages#home', via: 'get'
   match '/code', :to => redirect("https://github.com/Egogre/drinking_dash"), via: 'get'
   get "users/new"
+  match '/dashboard', to: 'dashboard#index', via: 'get'
   resources :drinks
   resources :categories
   resources :users
