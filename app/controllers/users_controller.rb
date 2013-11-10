@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    redirect_to root_path unless set_user == current_user
   end
 
   def create
