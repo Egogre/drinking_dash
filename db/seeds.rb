@@ -43,3 +43,11 @@ end
 users.each do |user|
   User.find_or_create_by_email(user)
 end
+
+don = User.find_by(name: "Don").id
+
+old_f  = Drink.find_by(name: "An Old Fashioned").id
+order = Order.create(user_id: don)
+order_items = { order_id: order.id, drink_id: old_f, quantity: 100 }
+OrderItem.create(order_items)
+
