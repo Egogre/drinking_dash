@@ -10,4 +10,8 @@ class Order < ActiveRecord::Base
     return total
   end
 
+  def payment_type
+    
+  end
+
 end

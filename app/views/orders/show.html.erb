@@ -1,0 +1,7 @@
+<h1> Pay Us, Bitches! </h1>
+
+<%= form_for @order do |f| %>
+	<%= select_tag(:payment_type, '<option value ="1">Credit Card</option>') %>
+<% end %>
+
+  <%= button_to "Place Order", order_path(current_order), method: "get" %>
