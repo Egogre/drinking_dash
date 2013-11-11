@@ -1,3 +1,32 @@
+.form {
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  text-align: right;
+}
+
+#logo {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+}
+
+header#page_header {
+  min-width: 600px;
+  background: #534f4b;
+  color: #fff;
+  height: 130px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  padding: 10px 20px;
+  margin-bottom: 0;
+}
+
+nav#utility {
+  float: right;
+  font-size: 0.8em;
+}
+
 nav#main_nav {
   padding: 5px;
   border-bottom: 10px solid #4c2719;
