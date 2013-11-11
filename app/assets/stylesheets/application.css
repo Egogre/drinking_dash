@@ -1,9 +1,10 @@
 /*
+*= require normalize
 *= require layout
 *= require navigation
 *= require sidebar
-*= require normalize
 *= require static
+*= require form
 *= require_self
 */
 
