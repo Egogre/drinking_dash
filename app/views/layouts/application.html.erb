@@ -9,26 +9,7 @@
 </head>
 <body>
 <div id="bigcon">
-  <header id="page_header" role="banner">
-    <nav id="utility">
-      <div id="login">
-        <% if signed_in? %>
-          <li>
-            <%= link_to "Users", '#' %>
-          </li>
-          <li>
-            <%= link_to "Profile", current_user %>
-          </li>
-          <li>
-            <%= link_to "Sign Out", signout_path, method: "delete" %>
-          </li>
-        <% else %>
-          <%= render 'sessions/form' %>
-        <% end %>
-      </div>
-    </nav>
-  <%= link_to(image_tag("logo.png", alt: "Logo", id: "logo"), root_url, title: "Dashboard") %>
-  </header>
+<%= render 'layouts/header' %>
   <nav id="main_nav" role="navigation">
     <ul>
       <%= link_to(root_path) do %>
