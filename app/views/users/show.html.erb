@@ -1,2 +1,16 @@
 <% provide(:title, @user.name) %>
 <h1><%= @user.name %></h1>
+<ul>
+<% @user.orders.each do |order| %>
+  <li>
+  <%= order.created_at.to_s %>: <%= number_to_currency order.grand_total %>
+  <ul>
+    <% order.order_items.each do |order_item| %>
+      <li>
+      <%= order_item.quantity %>x  <%= order_item.drink.name %>: <%= number_to_currency order_item.subtotal %>
+    </li>
+  <% end %>
+  </ul>
+  </li>
+<% end %>
+  </ul>

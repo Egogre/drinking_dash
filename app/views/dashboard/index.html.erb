@@ -1,3 +1,10 @@
 <% provide(:title, 'Admin Dashboard') %>
 
-Welcome
+<h1>Orders</h1>
+<ul>
+<% @orders.each do |order| %>
+  <li><%= order.user.name %>: <%= number_to_currency order.grand_total %></li>
+<% end%>
+</ul>
+
+
