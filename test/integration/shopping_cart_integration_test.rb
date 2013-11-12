@@ -63,4 +63,51 @@ class ShoppingCartIntegrationTest < Capybara::Rails::TestCase
     end
   end
 
+  def test_it_places_order_if_logged_in
+    visit root_path
+    within('#login') do
+      fill_in 'Email', :with => 'rolen@example.com'
+      fill_in 'Password', :with => 'password'
+      click_on 'Sign in'
+    end
+    visit categories_path
+
+    within "#drink_#{Drink.all.first.id}"do
+      click_on "Add to cart"
+      click_on "Add to cart"
+    end
+    within "#drink_#{Drink.all.last.id}"do
+      click_on "Add to cart"
+    end
+
+      click_on "Place Order"
+      assert page.has_content?("$19.99"), "grand total not showing"
+      assert page.has_content?("Pay Us, Bitches!"), "On right page"
+      click_on "Add a Credit Card"
+      select "American Express", from: "Card Type"
+      fill_in "Credit Card Number", with: "1234123412341234"
+      select "2014", from: "payment_expiration_date_1i"
+      select "01", from: "payment_expiration_date_2i"
+      click_on "Confirm"
+      select "Table 2", from: "Table Number"
+      click_on "Confirm"
+      assert page.has_content?("Order Confirmed!"), "WE GOTZ DA MONIEZ?"
+  end
+
+  def test_a_non_logged_user_cant_confirm_their_order
+    visit categories_path
+
+    within "#drink_#{Drink.all.first.id}"do
+      click_on "Add to cart"
+      click_on "Add to cart"
+    end
+    within "#drink_#{Drink.all.last.id}"do
+      click_on "Add to cart"
+    end
+
+    click_on "Place Order"
+    assert_equal current_path, categories_path
+  end
+
+
 end

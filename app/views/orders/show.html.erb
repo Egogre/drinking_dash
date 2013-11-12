@@ -1,0 +1,24 @@
+<h1> Pay Us, Bitches! </h1>
+
+<ul>
+<% @order.order_items.each do  |item| %>
+  <li>
+  <%= item.quantity %>x <%= item.drink.name %>: <%= item.subtotal %>
+  </li>
+<% end %>
+</ul>
+<h2>Grand Total: <%= @order.grand_total %></h2>
+
+<%= form_for @order do |f| %>
+  <% if current_user.payments.present? %>
+    <%= f.label :payment_id, "Credit Card" %>
+    <%= f.select :payment_id, options_for_select(current_user.payments.map do |payment|
+      ["#{payment.card_type} - Ending in  #{payment.credit_card_number[-4..-1]}", payment.id]
+    end) %><br />
+<% end %>
+<%= link_to "Add a Credit Card", new_payment_path %><br />
+  <%= f.label :table_id, "Table Number" %>
+  <%= f.select :table_id, options_for_select([["Table 1", 1],["Table 2", 2]]) %><br />
+  <%= f.submit "Confirm" %>
+<% end %>
+
