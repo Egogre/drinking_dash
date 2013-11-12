@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 gem 'simple_form'
 
-group :production do
+group :production, :staging do
   gem 'rails_12factor'
 end
 
