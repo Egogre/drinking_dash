@@ -6,13 +6,17 @@ class OrdersController < ApplicationController
   end
 
   def show
+    redirect_to categories_path unless current_user
     @order = current_order
+    @order.status = "ordered"
+    @order.save
   end
 
   def update
     current_order.payment_type = params[:payment_id]
     current_order.credit_card_number = params[:credit_card_number]
     current_order.table_id = params[:table_id]
+    current_order.status = "paid"
     current_order.save
     redirect_to user_path(current_user), notice: "Order Confirmed!"
   end
