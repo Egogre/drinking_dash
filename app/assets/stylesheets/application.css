@@ -6,7 +6,6 @@
  *= require sidebar
  *= require navigation
  *= require layout
- *= require_self
 */
 
 body,
