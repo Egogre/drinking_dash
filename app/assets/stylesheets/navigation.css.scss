@@ -54,6 +54,8 @@ nav#breadcrumbs {
 
   }
   li {
+  text-transform: lowercase;
+  word-spacing: -5px;
   margin: 0 2px;
   padding: 10px 16px;
   a,
@@ -63,7 +65,12 @@ nav#breadcrumbs {
   color: #000;
   }
   }
+  li:hover{
+
+    background-color: #fff;
+  }
   a:hover {
     color: #aaa;
+
   }
 }
