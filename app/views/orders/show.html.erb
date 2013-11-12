@@ -1,7 +1,21 @@
 <h1> Pay Us, Bitches! </h1>
 
+<ul>
+<% @order.order_items.each do  |item| %>
+  <li>
+  <%= item.quantity %>x <%= item.drink.name %>: <%= item.subtotal %>
+  </li>
+<% end %>
+</ul>
+<h2>Grand Total: <%= @order.grand_total %></h2>
+
 <%= form_for @order do |f| %>
-	<%= select_tag(:payment_type, '<option value ="1">Credit Card</option>') %>
+  <%= f.label :payment_type, "Payment Type" %>
+  <%= f.select :payment_type, options_for_select(["Visa", "American Express", "MasterCard", "Discover"]) %>
+  <%= f.label :credit_card_number, "Credit Card Number"%>
+  <%= f.text_field :credit_card_number %>
+  <%= f.label :table_id, "Table Number" %>
+  <%= f.select :table_id, options_for_select([["Table 1", 1],["Table 2", 2]]) %>
+  <%= f.submit "Confirm" %>
 <% end %>
 
-  <%= button_to "Place Order", order_path(current_order), method: "get" %>
