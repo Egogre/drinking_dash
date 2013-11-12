@@ -41,10 +41,10 @@ group :development, :test do
   # gem 'capybara_minitest_spec'
   gem 'launchy'
   gem "minitest-rails-capybara"
+  gem 'jazz_hands'
 end
 
 group :test do
-  gem 'pry'
   gem 'minitest-colorize'
   gem 'minitest-focus'
 end

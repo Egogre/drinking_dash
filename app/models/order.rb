@@ -1,6 +1,6 @@
 class Order < ActiveRecord::Base
-  validates :table_id, inclusion: { in: 0..9 }
-  validates :status, inclusion: { in: [ "ordered", "paid", "cancelled", "completed"] }
+  validates :table_id, inclusion: { in: 0..9 }, if: :table_id
+  validates :status, inclusion: { in: [ "ordered", "paid", "cancelled", "completed"] }, if: :status
   has_many :order_items
   belongs_to :user
   belongs_to :payment

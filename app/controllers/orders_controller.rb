@@ -13,8 +13,7 @@ class OrdersController < ApplicationController
   end
 
   def update
-    current_order.payment_type = params[:payment_id]
-    current_order.credit_card_number = params[:credit_card_number]
+    current_order.payment_id = params[:payment_id]
     current_order.table_id = params[:table_id]
     current_order.status = "paid"
     current_order.save
