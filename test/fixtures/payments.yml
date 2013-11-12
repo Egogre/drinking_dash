@@ -1,0 +1,14 @@
+# Read about fixtures at
+# http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  card_type: MyString
+  credit_card_number: MyString
+  expiration_date: MyString
+  user_id: 1
+
+two:
+  card_type: MyString
+  credit_card_number: MyString
+  expiration_date: MyString
+  user_id: 1
