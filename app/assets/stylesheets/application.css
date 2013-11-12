@@ -1,4 +1,13 @@
-
+/*
+ *= require_self
+ *= require normalize
+ *= require static
+ *= require form
+ *= require sidebar
+ *= require navigation
+ *= require layout
+ *= require_self
+*/
 
 body,
 html {
@@ -10,7 +19,7 @@ html {
 }
 
 
-body {
+eody {
   margin: 0;
   padding:0;
 }
