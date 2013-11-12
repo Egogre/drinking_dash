@@ -9,6 +9,7 @@ class OrdersController < ApplicationController
     redirect_to categories_path, notice: "you must login to place an order"  unless current_user
     @order = current_order
     @order.status = "ordered"
+    @order.user_id = current_user.id
     @order.save
   end
 

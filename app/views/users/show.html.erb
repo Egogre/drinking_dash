@@ -1,5 +1,11 @@
 <% provide(:title, @user.name) %>
+
 <h1><%= @user.name %></h1>
+<ul>
+<% @user.badges.each do |badge| %>
+  <li><%= badge.name %></li>
+<% end %>
+</ul>
 <ul>
 <% @user.orders.each do |order| %>
   <li>

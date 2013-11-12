@@ -16,6 +16,20 @@ end
 # Create application badges (uses https://github.com/norman/ambry)
 Merit::Badge.create!({
   id: 1,
-  name: 'Newbie',
+  name: 'newbie',
   description: 'New User! Welcome to Dive Bar. This is going to go well.'
   })
+
+Merit::Badge.create!({
+  id: 2,
+  name: 'hipster-king',
+  description: 'Hop on your fixie, twirl your stache and lead the hipsters into the sunset.'
+  })
+
+Merit::Badge.create!({
+  id: 3,
+  name: 'wonder-woman',
+  description: 'Wonderful!'
+  })
+
+
