@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 gem 'simple_form'
+gem 'merit'
 
 group :production, :staging do
   gem 'rails_12factor'
