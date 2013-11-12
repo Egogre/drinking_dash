@@ -6,7 +6,7 @@ class OrdersController < ApplicationController
   end
 
   def show
-    redirect_to categories_path unless current_user
+    redirect_to categories_path, notice: "you must login to place an order"  unless current_user
     @order = current_order
     @order.status = "ordered"
     @order.save
