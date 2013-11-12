@@ -13,6 +13,7 @@ header#page_header {
   overflow: hidden;
   padding: 10px 20px;
   margin-bottom: 0;
+  position: relative;
 }
 
 nav#utility {
@@ -61,5 +62,8 @@ nav#breadcrumbs {
   padding-right: 12px;
   color: #000;
   }
+  }
+  a:hover {
+    color: #aaa;
   }
 }

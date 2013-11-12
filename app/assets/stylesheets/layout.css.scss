@@ -1,9 +1,13 @@
 #bigcon {
-  position:relative;
-  min-height:100%;
+  margin: 0 auto;
+  padding: 0 0 60px;
+  position: relative;
+  width: 980px;
+  z-index: 2;
+  min-height:80%;
   min-width: 800px;
   margin: 0 auto 0 auto;
-  padding-bottom: 45px;   /* Height of the footer */
+  padding-bottom: 5%;   /* Height of the footer */
 }
 
 div#login {
