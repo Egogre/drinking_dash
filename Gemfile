@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
+gem 'simple_form'
 
-group :production do
+group :production, :staging do
   gem 'rails_12factor'
 end
 
@@ -44,7 +45,6 @@ group :development, :test do
 end
 
 group :test do
-  gem 'pry'
   gem 'minitest-colorize'
   gem 'minitest-focus'
 end

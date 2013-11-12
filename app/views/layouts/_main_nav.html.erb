@@ -1,12 +1,16 @@
-<!-- This currently doesn't work but is being kept in case it can be brought back in -->
-
-<% content_for :main_navigation do %>
   <nav id="main_nav" role="navigation">
     <ul>
-      <li><%= link_to 'Home', root_path %></li>
-      <li><%= link_to 'Menu', categories_path %></li>
-      <li><%= link_to 'About', about_path %></li>
-      <li><%= link_to 'Contact', contact_path %></li>
+      <%= link_to(root_path) do %>
+      <li>Home</li>
+      <% end %>
+      <%= link_to(categories_path) do %>
+      <li>Menu</li>
+      <% end %>
+      <%= link_to(about_path) do %>
+      <li>About</li>
+      <% end %>
+      <%= link_to(contact_path) do %>
+      <li>Contact</li>
+      <% end %>
     </ul>
   </nav>
-<% end %>

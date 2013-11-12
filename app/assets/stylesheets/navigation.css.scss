@@ -1,3 +1,26 @@
+
+#logo {
+  position: absolute;
+  top: 18px;
+  left: 3%;
+}
+
+header#page_header {
+  min-width: 600px;
+  background: #534f4b;
+  color: #fff;
+  height: 130px;
+  overflow: hidden;
+  padding: 10px 20px;
+  margin-bottom: 0;
+  position: relative;
+}
+
+nav#utility {
+  float: right;
+  font-size: 0.8em;
+}
+
 nav#main_nav {
   padding: 5px;
   border-bottom: 10px solid #4c2719;
@@ -31,6 +54,8 @@ nav#breadcrumbs {
 
   }
   li {
+  text-transform: lowercase;
+  word-spacing: -5px;
   margin: 0 2px;
   padding: 10px 16px;
   a,
@@ -39,5 +64,13 @@ nav#breadcrumbs {
   padding-right: 12px;
   color: #000;
   }
+  }
+  li:hover{
+
+    background-color: #fff;
+  }
+  a:hover {
+    color: #aaa;
+
   }
 }

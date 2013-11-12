@@ -6,7 +6,18 @@ class OrdersController < ApplicationController
   end
 
   def show
+    redirect_to categories_path, notice: "you must login to place an order"  unless current_user
     @order = current_order
+    @order.status = "ordered"
+    @order.save
+  end
+
+  def update
+    current_order.payment_id = params[:payment_id]
+    current_order.table_id = params[:table_id]
+    current_order.status = "paid"
+    current_order.save
+    redirect_to user_path(current_user), notice: "Order Confirmed!"
   end
 
 end
