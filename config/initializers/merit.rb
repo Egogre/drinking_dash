@@ -17,19 +17,22 @@ end
 Merit::Badge.create!({
   id: 1,
   name: 'newbie',
-  description: 'New User! Welcome to Dive Bar. This is going to go well.'
+  description: 'New User! Welcome to Dive Bar. This is going to go well.',
+  custom_fields: 'bgamepad.png'
   })
 
 Merit::Badge.create!({
   id: 2,
   name: 'hipster-king',
-  description: 'Hop on your fixie, twirl your stache and lead the hipsters into the sunset.'
+  description: 'Hop on your fixie, twirl your stache and lead the hipsters into the sunset.',
+  custom_fields: 'gfrown.png'
   })
 
 Merit::Badge.create!({
   id: 3,
   name: 'wonder-woman',
-  description: 'Wonderful!'
+  description: 'Wonderful!',
+  custom_fields: 'gfrown.png'
   })
 
 

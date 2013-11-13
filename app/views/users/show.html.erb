@@ -12,7 +12,8 @@
 <h3>Badges</h3>
 <ul>
 <% @user.badges.each do |badge| %>
-  <li><%= badge.name %></li>
+  <li><%= badge.description %></li>
+  <%= image_tag "#{badge.custom_fields}" %>
 <% end %>
 </ul>
 <hr>

@@ -34,6 +34,10 @@ class UsersController < ApplicationController
 
   private
 
+  def user_badges
+    User.badges
+  end
+
   def set_user
     @user = User.find(params[:id])
   end
