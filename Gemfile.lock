@@ -92,8 +92,11 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+<<<<<<< HEAD
     merit (1.6.2)
       ambry (~> 0.3.0)
+=======
+>>>>>>> payment-refactoring
     method_source (0.8.2)
     mime-types (1.25)
     mini_portile (0.5.2)
