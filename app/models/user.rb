@@ -12,6 +12,21 @@ class User < ActiveRecord::Base
   has_many :orders
   has_many :payments
 
+  def unique_badge_add(id_num)
+    if badge_array.include?(id_num)
+    else
+      self.add_badge(id_num)
+    end
+  end
+
+  def badge_array
+    badge_id_array = []
+    self.badges.each do |badge|
+      badge_id_array << badge.id
+    end
+    badge_id_array
+  end
+
   def User.new_remember_token
     SecureRandom.urlsafe_base64
   end
