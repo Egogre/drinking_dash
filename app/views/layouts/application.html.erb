@@ -18,9 +18,7 @@
       </p> </h4>
       <%= yield %>
     </section>
-    <% unless controller_name == "orders" && action_name == "show"%>
-    <%= render "layouts/sidebar" %>
-  <% end %>
+    <%= render_sidebar %>
   </div>
   <%= render 'layouts/footer' %>
 </div>

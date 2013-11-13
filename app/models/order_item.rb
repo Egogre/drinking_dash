@@ -3,9 +3,13 @@ class OrderItem < ActiveRecord::Base
   belongs_to :drink
   belongs_to :order
 
-def subtotal
-  self.quantity * drink.price
-end
+  def subtotal
+    self.quantity * drink.price
+  end
 
-
+  def update_quantity(amount)
+    amount = amount.to_i
+    self.quantity = amount
+    self.destroy if amount.zero?
+  end
 end

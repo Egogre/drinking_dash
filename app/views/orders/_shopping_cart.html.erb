@@ -1,16 +1,33 @@
-<header><h1 class="ir" id="recent">Shopping Cart</h1></header>
-<ul>
+<table>
+  <tr>
+    <th>Quantity</th>
+    <th>Drink</th>
+    <th>Total</th>
+    <th></th>
+  </tr>
   <% current_order.order_items.each do |item| %>
-    <li id="cart_id_<%=item.drink.id%>"> <%= item.drink.name %>: <%= item.quantity %> x  <%= number_to_currency item.drink.price %> <%= number_to_currency item.subtotal %>
-  <%=form_for item do |f|%>
-    <%=f.text_field :quantity, maxlength:2%>
-    <%=f.submit "Update" %>
-  <% end%>
-  </li>
-<% end %>
-<h3> Grand Total = <%= number_to_currency current_order.grand_total %> </h3>
-  </ul>
+    <tr class="order_item" id="cart_id_<%=item.drink.id%>">
+      <%=form_for item do |f|%>
+	<td><%=f.text_field :quantity, maxlength:2%> x</td>
+	<td><%= item.drink.name %></td>
+	<td class="total"><%= number_to_currency item.subtotal %></td>
+	<td >  <%=f.submit "Update", class: "update_button" %></td>
+      <% end%>
+    </tr>
+  <% end %>
+    <tr>
+    <td colspan="2">Grand Total</td>
+    <td class="total"><%= number_to_currency current_order.grand_total %></td>
+    <td></td>
+  </tr>
+</table>
+<div class="buttons">
+<div class="empty_cart_button">
   <%= button_to "Empty Cart", order_path(current_order), method: "delete" %>
-    <% unless controller_name == "orders" && action_name == "show"%>
+</div>
+  <% unless on_order_show? %>
+    <div class="place_order_button">
   <%= button_to "Place Order", order_path(current_order), method: "get" %>
+    </div>
 <% end %>
+</div>
