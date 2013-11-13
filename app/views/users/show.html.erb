@@ -4,6 +4,11 @@
 <h4><%= @user.email %></h4>
 <%= link_to 'Edit', edit_user_path(@user) %>
 <hr>
+<% if current_user.admin_role %>
+  <%= link_to "Dashboard", dashboard_path %>
+  <hr>
+<% end %>
+
 <h3>Badges</h3>
 <ul>
 <% @user.badges.each do |badge| %>

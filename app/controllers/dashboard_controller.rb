@@ -6,6 +6,7 @@ def index
   @orders = Order.all.select(&:user_id)
   @categories = Category.all
   @drinks = Drink.all
+  @current_user = current_user
 end
 
 end
