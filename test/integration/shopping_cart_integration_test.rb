@@ -22,7 +22,6 @@ class ShoppingCartIntegrationTest < Capybara::Rails::TestCase
 
     within "#sidebar" do
       refute page.has_text?(%r{#{Drink.all.first.name}.*#{Drink.all.first.name}}), "Only one drink!"
-      assert page.has_content?("2"), "I need two drinks!"
     end
   end
 
@@ -149,7 +148,6 @@ class ShoppingCartIntegrationTest < Capybara::Rails::TestCase
 
     within "#sidebar" do
       refute page.has_text?(%r{#{Drink.all.first.name}.*#{Drink.all.first.name}}), "Only one drink!"
-      assert page.has_content?("2"), "I need two drinks!"
     end
   end
 
@@ -180,6 +178,23 @@ class ShoppingCartIntegrationTest < Capybara::Rails::TestCase
       refute page.has_text?(%r{#{Drink.all.first.name}}), "Cart Should be empty"
     end
 
+  end
+
+  def test_shopping_removes_item_when_set_two_zero
+    visit categories_path
+
+    within "#drink_#{Drink.all.first.id}"do
+      click_on "Add to cart"
+    end
+
+    within "#cart_id_#{Drink.all.first.id}" do
+      fill_in "order_item_quantity", with: "0"
+      click_on "Update"
+    end
+
+    within "#sidebar" do
+      refute page.has_text?(%r{#{Drink.all.first.name}}), "No Drinks"
+    end
   end
 
 

@@ -10,9 +10,12 @@
   <% else %>
     <%= render "payments/form" %>
 <% end %>
-<%= link_to "Add a Credit Card", new_payment_path %><br />
+
+<% if user_has_credit_card? %>
+  <%= link_to "Add a Credit Card", new_payment_path %><br />
   <%= f.label :table_id, "Table Number" %>
-  <%= f.select :table_id, options_for_select([["Table 1", 1],["Table 2", 2]]) %><br />
-  <%= f.submit "Confirm" %>
+  <%= f.select :table_id, options_for_table_select%><br />
+  <%= f.submit "Confirm", class: "confirm button" %>
+<% end %>
 <% end %>
 
