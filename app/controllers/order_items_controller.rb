@@ -15,9 +15,9 @@ class OrderItemsController < ApplicationController
 
   def update
     @order_item = OrderItem.find( params[:id])
-    @order_item.quantity = params[:order_item][:quantity]
+    @order_item.update_quantity(params[:order_item][:quantity])
 
-    if @order_item.save
+    if @order_item.save || @order_item
      redirect_to :back
     else
      redirect_to :back, notice: "Quantity must be a whole positive integer."
