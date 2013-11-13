@@ -25,14 +25,14 @@ Merit::Badge.create!({
   id: 2,
   name: 'hipster-king',
   description: 'Hop on your fixie, twirl your stache and lead the hipsters into the sunset.',
-  custom_fields: 'gfrown.png'
+  custom_fields: 'mustache.png'
   })
 
 Merit::Badge.create!({
   id: 3,
-  name: 'wonder-woman',
-  description: 'Wonderful!',
-  custom_fields: 'gfrown.png'
+  name: 'big-spender',
+  description: 'Living large and in charge.',
+  custom_fields: 'bmoney.png'
   })
 
 

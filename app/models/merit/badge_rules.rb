@@ -30,6 +30,10 @@ module Merit
         user.orders.count > 1
       end
 
+      grant_on 'users#show', :badge => 'big-spender' do |user|
+        user.orders.count > 1
+      end
+
       # If it has 5 votes, grant relevant-commenter badge
       # grant_on 'comments#vote', :badge => 'relevant-commenter', :to => :user do |comment|
       #   comment.votes.count == 5
