@@ -27,6 +27,7 @@ class OrdersController < ApplicationController
       current_order.save
       session[:order_id] = nil
       redirect_to user_path(current_user), notice: "Order Confirmed!"
+      spender_badge
     end
   end
 

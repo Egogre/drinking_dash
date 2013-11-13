@@ -12,5 +12,3 @@ class AdminPrivledgesTest <Capybara::Rails::TestCase
     refute_equal current_path, dashboard_path
   end
 end
-
-
