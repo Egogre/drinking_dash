@@ -8,6 +8,7 @@ class OrderItemsController < ApplicationController
       @order_item.quantity += 1
     if @order_item.save
       redirect_to categories_path, notice: "#{@order_item.drink.name} added to cart"
+      hipster_badge
     else
       redirect_to categories_path, notice: "Failed to add drink."
     end
@@ -18,7 +19,8 @@ class OrderItemsController < ApplicationController
     @order_item.quantity = params[:order_item][:quantity]
 
     if @order_item.save
-     redirect_to :back
+      redirect_to :back
+      hipster_badge
     else
      redirect_to :back, notice: "Quantity must be a whole positive integer."
     end

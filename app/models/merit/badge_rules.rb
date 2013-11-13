@@ -23,12 +23,7 @@ module Merit
     def initialize
       # If it creates user, grant badge
       # Should be "current_user" after registration for badge to be granted.
-      grant_on 'users#show', :badge => 'newbie', :to => :itself
-
       # If it has 10 comments, grant commenter-10 badge
-      grant_on 'users#show', :badge => 'hipster-king' do |user|
-        user.orders.count > 1
-      end
 
       # If it has 5 votes, grant relevant-commenter badge
       # grant_on 'comments#vote', :badge => 'relevant-commenter', :to => :user do |comment|
