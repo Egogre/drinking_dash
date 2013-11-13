@@ -13,4 +13,8 @@ class Order < ActiveRecord::Base
     return total
   end
 
+  def ordered?
+    status == "ordered"
+  end
+
 end

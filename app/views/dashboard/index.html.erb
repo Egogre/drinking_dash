@@ -4,7 +4,19 @@
 <ul>
 <% @orders.each do |order| %>
   <li><%= order.user.name %>: <%= number_to_currency order.grand_total %></li>
-<% end%>
+<% end %>
+</ul>
+<ul>
+<% @categories.each do |category| %>
+  <li> <%= link_to "Edit: #{category.drink_type}",edit_category_path(category.id) %></li>
+<% end %>
+<li> <%= link_to "Add New Category", new_category_path %></li>
 </ul>
 
+<ul>
+<% @drinks.each do |drink| %>
+  <li> <%= link_to "Edit: #{drink.name}",edit_drink_path(drink.id) %></li>
+<% end %>
+<li> <%= link_to "Add New Drink", new_drink_path %></li>
+</ul>
 

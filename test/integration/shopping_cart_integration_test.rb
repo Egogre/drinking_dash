@@ -68,7 +68,7 @@ class ShoppingCartIntegrationTest < Capybara::Rails::TestCase
     within('#login') do
       fill_in 'Email', :with => 'rolen@example.com'
       fill_in 'Password', :with => 'password'
-      click_on 'Sign in'
+      click_on 'Sign In'
     end
     visit categories_path
 
@@ -83,12 +83,11 @@ class ShoppingCartIntegrationTest < Capybara::Rails::TestCase
       click_on "Place Order"
       assert page.has_content?("$19.99"), "grand total not showing"
       assert page.has_content?("Pay Us, Bitches!"), "On right page"
-      click_on "Add a Credit Card"
       select "American Express", from: "Card Type"
       fill_in "Credit Card Number", with: "1234123412341234"
       select "2014", from: "payment_expiration_date_1i"
       select "01", from: "payment_expiration_date_2i"
-      click_on "Confirm"
+      click_on "Add a New Credit Card"
       select "Table 2", from: "Table Number"
       click_on "Confirm"
       assert page.has_content?("Order Confirmed!"), "WE GOTZ DA MONIEZ?"
@@ -107,6 +106,80 @@ class ShoppingCartIntegrationTest < Capybara::Rails::TestCase
 
     click_on "Place Order"
     assert_equal current_path, categories_path
+  end
+
+  def test_a_logged_in_user_with_a_cc_can_make_a_purchase
+    user = User.create!( name: "Bob", email: "bob@example.com", password: "password", password_confirmation: "password")
+    Payment.create!( card_type: "Visa", credit_card_number: "1111222233334444", user_id: user.id, expiration_date: "0114")
+
+    visit root_path
+
+    within('#login') do
+      fill_in 'Email', :with => 'bob@example.com'
+      fill_in 'Password', :with => 'password'
+      click_on 'Sign In'
+    end
+    visit categories_path
+
+    within "#drink_#{Drink.all.first.id}"do
+      click_on "Add to cart"
+      click_on "Add to cart"
+    end
+    within "#drink_#{Drink.all.last.id}"do
+      click_on "Add to cart"
+    end
+
+    click_on "Place Order"
+      select "Table 2", from: "Table Number"
+      click_on "Confirm"
+      assert page.has_content?("Order Confirmed!"), "WE GOTZ DA MONIEZ?"
+  end
+
+  def test_shopping_cart_can_add_existing_item
+    visit categories_path
+
+    within "#drink_#{Drink.all.first.id}"do
+      click_on "Add to cart"
+    end
+
+    within "#cart_id_#{Drink.all.first.id}" do
+      fill_in "order_item_quantity", with: "2"
+      click_on "Update"
+    end
+
+    within "#sidebar" do
+      refute page.has_text?(%r{#{Drink.all.first.name}.*#{Drink.all.first.name}}), "Only one drink!"
+      assert page.has_content?("2"), "I need two drinks!"
+    end
+  end
+
+  def test_shopping_cart_can_be_cleared_on_order_show_page
+    user = User.create!( name: "Bob", email: "bob@example.com", password: "password", password_confirmation: "password")
+    Payment.create!( card_type: "Visa", credit_card_number: "1111222233334444", user_id: user.id, expiration_date: "0114")
+
+    visit root_path
+
+    within('#login') do
+      fill_in 'Email', :with => 'bob@example.com'
+      fill_in 'Password', :with => 'password'
+      click_on 'Sign In'
+    end
+    visit categories_path
+
+    within "#drink_#{Drink.all.first.id}"do
+      click_on "Add to cart"
+      click_on "Add to cart"
+    end
+    within "#drink_#{Drink.all.last.id}"do
+      click_on "Add to cart"
+    end
+    click_on "Place Order"
+    click_on "Empty Cart"
+
+    within "#sidebar" do
+      refute page.has_text?(%r{#{Drink.all.first.name}}), "Cart Should be empty"
+    end
+
   end
 
 

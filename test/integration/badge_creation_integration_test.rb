@@ -1,8 +1,8 @@
 require "test_helper"
 
 class IndexIntegrationTest < Capybara::Rails::TestCase
-  
-  def sign_in
+
+  def sign_up
     visit root_path
     assert_equal root_path, current_path
     click_on "Sign up now!"
@@ -16,22 +16,12 @@ class IndexIntegrationTest < Capybara::Rails::TestCase
     end
   end
 
-  def test_user_can_sign_up
-    visit root_path
-    assert_equal root_path, current_path
-    sign_in
-    assert_equal root_path, current_path
-    refute page.has_content?("Sign up now!")
-  end
-
-  def test_user_is_prompted_to_sign_in
-    visit root_path
-    assert page.has_content?("Sign up")
-  end
-
-  def test_user_has_access_to_show_page
+  def test_newbie_badge_appears_on_show_page
     sign_in
     click_on "Profile"
-    assert page.has_content?("Jeff")
+    click_on "Profile"
+    assert page.has_content?("Badges")
+    assert page.has_content?("New User")
   end
+
 end
