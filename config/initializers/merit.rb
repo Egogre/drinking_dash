@@ -35,4 +35,10 @@ Merit::Badge.create!({
   custom_fields: 'bmoney.png'
   })
 
+Merit::Badge.create!({
+  id: 4,
+  name: 'boo-this-admin',
+  description: 'BOO THIS ADMIN.',
+  custom_fields: 'gfrown.png'
+  })
 

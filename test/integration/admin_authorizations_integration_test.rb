@@ -18,5 +18,3 @@ class AdminPrivledgesTest <Capybara::Rails::TestCase
   end
 
 end
-
-

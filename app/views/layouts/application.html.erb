@@ -12,7 +12,10 @@
 <%= render 'layouts/header' %>
   <div class="container">
     <section id="content">
-      <h4><p class="flash"><%= flash.notice %></p></h4>
+      <h4 class=><p class="flash"><%= flash.notice %> 
+      </p> </h4>
+      <h4 class=><p class="badge"><%= flash.alert %> 
+      </p> </h4>
       <%= yield %>
     </section>
     <% unless controller_name == "orders" && action_name == "show"%>
