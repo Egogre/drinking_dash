@@ -40,6 +40,7 @@ end
 group :development, :test do
   # gem 'capybara'
   # gem 'capybara_minitest_spec'
+  gem "jazz_hands"
   gem 'launchy'
   gem "minitest-rails-capybara"
 end
