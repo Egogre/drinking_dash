@@ -24,4 +24,8 @@ class Order < ActiveRecord::Base
 
   end
 
+  def ordered?
+    status == "ordered"
+  end
+
 end

@@ -3,6 +3,9 @@
 <h1>Editing drink</h1>
 
 <%= render 'form' %>
+<br>
 
+
+<%= link_to 'Destroy', @drink, method: :delete, data: { confirm: 'Are you sure?' } %> |
 <%= link_to 'Show', @drink %> |
 <%= link_to 'Back', drinks_path %>

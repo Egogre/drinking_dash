@@ -3,12 +3,21 @@
 <h1>Orders</h1>
 <ul>
 <% @orders.each do |order| %>
-  <li><%= order.user.name %>: <%= number_to_currency order.grand_total %>: <%= order.status %></li>
-  <% if order.status == "Paid"
-  	 <h4><%= button_to "Confirm Transaction Complete", dashboard_path, method: "complete_transaction", :class => "button" %></h4>
-  	 <h4><%= button_to "Cancel Order?", dashboard_path, method: "cancel_transaction", :class => "cancel_button" %></h4>
-  	 <% end %>
-<% end%>
+
+  <li><%= order.user.name %>: <%= number_to_currency order.grand_total %></li>
+<% end %>
+</ul>
+<ul>
+<% @categories.each do |category| %>
+  <li> <%= link_to "Edit: #{category.drink_type}",edit_category_path(category.id) %></li>
+<% end %>
+<li> <%= link_to "Add New Category", new_category_path %></li>
 </ul>
 
+<ul>
+<% @drinks.each do |drink| %>
+  <li> <%= link_to "Edit: #{drink.name}",edit_drink_path(drink.id) %></li>
+<% end %>
+<li> <%= link_to "Add New Drink", new_drink_path %></li>
+</ul>
 

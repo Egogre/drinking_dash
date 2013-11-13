@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  has_merit
+
   before_save { self.email = email.downcase }
   before_create :create_remember_token
   validates :name, presence: true, length: { maximum: 50 }
@@ -6,9 +8,24 @@ class User < ActiveRecord::Base
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, presence: true, format: { with: VALID_EMAIL_REGEX }, uniqueness: { case_sensitive: false }
   has_secure_password
-  validates :password, length: { minimum: 6 }
+  validates :password, length: { minimum: 6 }, if: :password
   has_many :orders
   has_many :payments
+
+  def unique_badge_add(id_num)
+    if badge_array.include?(id_num)
+    else
+      self.add_badge(id_num)
+    end
+  end
+
+  def badge_array
+    badge_id_array = []
+    self.badges.each do |badge|
+      badge_id_array << badge.id
+    end
+    badge_id_array
+  end
 
   def User.new_remember_token
     SecureRandom.urlsafe_base64

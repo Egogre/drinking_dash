@@ -1,6 +1,6 @@
 class CategoriesController < ApplicationController
-  before_action :set_category, only: [:show, :edit, :update]
-  before_action :admin_authorization, only: [:edit, :update, :new, :create]
+  before_action :set_category, only: [:show, :edit, :update, :destroy]
+  before_action :admin_authorization, only: [:edit, :update, :new, :create, :destroy]
 
   def index
     @categories = Category.all
@@ -39,6 +39,12 @@ class CategoriesController < ApplicationController
     else
       redirect_to new_category_path, notice: "You messed up son!"
     end
+  end
+
+  def destroy
+    @category.destroy
+    redirect_to dashboard_path
+    flash.notice = "#{@category.drink_type} destroyed!"
   end
 
   private
