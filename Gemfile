@@ -45,6 +45,7 @@ group :development, :test do
 end
 
 group :test do
+  gem 'jazz_hands'
   gem 'minitest-colorize'
   gem 'minitest-focus'
 end

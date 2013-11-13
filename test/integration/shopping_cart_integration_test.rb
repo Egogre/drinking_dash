@@ -68,7 +68,7 @@ class ShoppingCartIntegrationTest < Capybara::Rails::TestCase
     within('#login') do
       fill_in 'Email', :with => 'rolen@example.com'
       fill_in 'Password', :with => 'password'
-      click_on 'Sign in'
+      click_on 'Sign In'
     end
     visit categories_path
 

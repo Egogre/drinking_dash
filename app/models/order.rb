@@ -13,4 +13,15 @@ class Order < ActiveRecord::Base
     return total
   end
 
+  def status_update_paid(payment, table)
+    self.payment_id = payment
+    self.table_id = table
+    self.status = "paid"
+    self.save
+  end
+
+  def status_update_completed
+
+  end
+
 end

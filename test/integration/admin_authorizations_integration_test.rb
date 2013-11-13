@@ -11,6 +11,12 @@ class AdminPrivledgesTest <Capybara::Rails::TestCase
     visit "/dashboard"
     refute_equal current_path, dashboard_path
   end
+
+  def test_admin_confirms_transaction
+    visit "/dashboard"
+
+  end
+
 end
 
 

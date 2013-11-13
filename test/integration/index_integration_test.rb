@@ -41,7 +41,7 @@ class IndexIntegrationTest < Capybara::Rails::TestCase
     within('#login') do
       fill_in 'Email', :with => 'rolen@example.com'
       fill_in 'Password', :with => 'password'
-      click_on 'Sign in'
+      click_on 'Sign In'
     end
     # save_and_open_page
     assert page.has_content?("Rolen")
@@ -52,7 +52,7 @@ class IndexIntegrationTest < Capybara::Rails::TestCase
     within('#login') do
       fill_in 'Email', :with => 'rolen@example.com'
       fill_in 'Password', :with => 'password'
-      click_on 'Sign in'
+      click_on 'Sign In'
     end
 
     click_on("Sign Out")
