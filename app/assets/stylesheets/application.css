@@ -3,6 +3,7 @@
  *= require normalize
  *= require static
  *= require home
+ *= require dashboard
  *= require form
  *= require sidebar
  *= require navigation
