@@ -1,6 +1,6 @@
 class DrinksController < ApplicationController
-  before_action :set_drink, only: [:show, :edit, :update]
-  before_action :admin_authorization, only: [:edit, :update, :new, :create]
+  before_action :set_drink, only: [:show, :edit, :update, :destroy]
+  before_action :admin_authorization, only: [:edit, :update, :new, :create, :destroy]
 
   def index
     @drinks = Drink.all
@@ -18,7 +18,7 @@ class DrinksController < ApplicationController
 
     respond_to do |format|
       if @drink.save
-        format.html { redirect_to drinks_path, notice: 'Drink was successfully created.' }
+        format.html { redirect_to @drink, notice: 'Drink was successfully created.' }
         format.json { render action: 'show', status: :created, location: @drink }
         flash.notice = "New Drink, '#{@drink.name}', Created!"
       else
@@ -41,6 +41,12 @@ class DrinksController < ApplicationController
         format.json { render json: @drink.errors, status: :unprocessable_entity }
       end
     end
+  end
+
+  def destroy
+    @drink.destroy
+    redirect_to dashboard_path
+    flash.notice = "#{@drink.name} destroyed!"
   end
 
   private
