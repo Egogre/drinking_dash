@@ -1,11 +1,13 @@
 <% provide(:title, 'Admin Dashboard') %>
 
+<%= render partial: 'order' %>
+
 <ul>
   <li> <%= link_to "Add New Category", new_category_path %></li>
   <li> <%= link_to "Add New Drink", new_drink_path %></li>
 </ul>
 
-<%= render partial: 'order' %>
+
 
 <hr>
 <h3>Edit Categories and Drinks</h3>
@@ -14,7 +16,7 @@
   <li> <%= link_to "Edit: #{category.drink_type}",edit_category_path(category.id) %></li>
 <% end %>
 </ul>
-************
+
 <ul>
 <% @drinks.each do |drink| %>
   <li> <%= link_to "Edit: #{drink.name}",edit_drink_path(drink.id) %></li>

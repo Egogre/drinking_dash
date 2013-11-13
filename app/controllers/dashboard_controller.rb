@@ -9,4 +9,12 @@ class DashboardController < ApplicationController
     @current_user = current_user
   end
 
+def compete_transaction
+  
+end
+
+def cancel_transaction
+  
+end
+
 end

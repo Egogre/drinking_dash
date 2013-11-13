@@ -21,10 +21,7 @@ class OrdersController < ApplicationController
     if params[:commit] == "Add a New Credit Card"
       create_new_payment
     else
-      current_order.payment_id = params[:payment_id]
-      current_order.table_id = params[:table_id]
-      current_order.status = "paid"
-      current_order.save
+      current_order.status_update_paid(params[:payment_id], params[:table_id])
       session[:order_id] = nil
       redirect_to user_path(current_user), notice: "Order Confirmed!"
       spender_badge

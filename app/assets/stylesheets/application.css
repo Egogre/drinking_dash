@@ -2,10 +2,14 @@
  *= require_self
  *= require normalize
  *= require static
+ *= require home
+ *= require dashboard
  *= require form
  *= require sidebar
  *= require navigation
  *= require layout
+ *= require shopping_cart
+ *= require order_page
 */
 
 body,

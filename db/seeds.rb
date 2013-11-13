@@ -50,7 +50,7 @@ end
 don = User.find_by(name: "Don").id
 
 old_f  = Drink.find_by(name: "An Old Fashioned").id
-order = Order.create(user_id: don)
+order = Order.create(user_id: don, status: 'paid')
 order_items = { order_id: order.id, drink_id: old_f, quantity: 100 }
 OrderItem.create(order_items)
 
