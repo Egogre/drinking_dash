@@ -15,11 +15,9 @@
       <h4><p class="flash"><%= flash.notice %></p></h4>
       <%= yield %>
     </section>
-    <section id="sidebar">
-      <section id="recent_activity">
-	<%= render "orders/shopping_cart" %>
-      </section>
-    </section>
+    <% unless controller_name == "orders" && action_name == "show"%>
+    <%= render "layouts/sidebar" %>
+  <% end %>
   </div>
   <%= render 'layouts/footer' %>
 </div>

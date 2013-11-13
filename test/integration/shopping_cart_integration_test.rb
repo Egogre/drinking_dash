@@ -153,5 +153,34 @@ class ShoppingCartIntegrationTest < Capybara::Rails::TestCase
     end
   end
 
+  def test_shopping_cart_can_be_cleared_on_order_show_page
+    user = User.create!( name: "Bob", email: "bob@example.com", password: "password", password_confirmation: "password")
+    Payment.create!( card_type: "Visa", credit_card_number: "1111222233334444", user_id: user.id, expiration_date: "0114")
+
+    visit root_path
+
+    within('#login') do
+      fill_in 'Email', :with => 'bob@example.com'
+      fill_in 'Password', :with => 'password'
+      click_on 'Sign In'
+    end
+    visit categories_path
+
+    within "#drink_#{Drink.all.first.id}"do
+      click_on "Add to cart"
+      click_on "Add to cart"
+    end
+    within "#drink_#{Drink.all.last.id}"do
+      click_on "Add to cart"
+    end
+    click_on "Place Order"
+    click_on "Empty Cart"
+
+    within "#sidebar" do
+      refute page.has_text?(%r{#{Drink.all.first.name}}), "Cart Should be empty"
+    end
+
+  end
+
 
 end

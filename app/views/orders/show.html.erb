@@ -1,14 +1,6 @@
 <h1> Pay Us, Bitches! </h1>
 
-<ul>
-<% @order.order_items.each do  |item| %>
-  <li>
-  <%= item.quantity %>x <%= item.drink.name %>: <%= item.subtotal %>
-  </li>
-<% end %>
-</ul>
-<h2>Grand Total: <%= @order.grand_total %></h2>
-
+<%= render "orders/shopping_cart" %>
 <%= form_for @order do |f| %>
   <% if current_user.payments.present? %>
     <%= f.label :payment_id, "Credit Card" %>
