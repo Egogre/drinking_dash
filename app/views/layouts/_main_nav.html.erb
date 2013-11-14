@@ -6,11 +6,8 @@
       <%= link_to(categories_path) do %>
       <li>Menu</li>
       <% end %>
-      <%= link_to(about_path) do %>
-      <li>About</li>
-      <% end %>
-      <%= link_to(contact_path) do %>
-      <li>Contact</li>
-      <% end %>
     </ul>
+    <div id="search">
+      <%= render partial: 'layouts/search' %>
+    </div>
   </nav>
