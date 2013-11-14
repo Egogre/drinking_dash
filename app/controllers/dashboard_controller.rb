@@ -9,6 +9,13 @@ class DashboardController < ApplicationController
     @current_user = current_user
   end
 
+  def edit
+    redirect_to root_path unless self.admin?
+    @drink = Drink.new
+    @category = Category.new
+
+  end
+
 def compete_transaction
   
 end

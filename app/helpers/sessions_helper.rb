@@ -29,5 +29,9 @@ module SessionsHelper
     self.current_user.present? && self.current_user.admin_role
   end
 
+  def cart_empty?
+    current_order.order_items.count == 0
+  end
+
 
 end

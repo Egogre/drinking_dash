@@ -1,8 +1,19 @@
-<section id="sidebar">
-  <section id="recent_activity">
-    <div class="shopping_cart">
-    <header><h1 class="ir" id="recent">Shopping Cart</h1></header>
-    <%= render_shopping_cart %>
-  </div>
+<% unless cart_empty? %>
+  <section id="sidebar">
+    <section id="recent_activity">
+      <div class="shopping_cart">
+      <header><h1 class="ir" id="recent">Shopping Cart</h1></header>
+      <%= render_shopping_cart %>
+    </div>
+    </section>
   </section>
-</section>
+<% else %>
+  <div class="img_block">
+    <%= image_tag "bgamepad.png" %>
+    <%= image_tag "mustache.png" %>
+    <%= image_tag "gfrown.png" %> 
+    <%= image_tag "bmoney.png" %> 
+  </div> 
+<% end %>
+
+
