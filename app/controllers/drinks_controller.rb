@@ -19,11 +19,9 @@ class DrinksController < ApplicationController
     respond_to do |format|
       if @drink.save
         format.html { redirect_to @drink, notice: 'Drink was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @drink }
         flash.notice = "New Drink, '#{@drink.name}', Created!"
       else
         format.html { render action: 'new' }
-        format.json { render json: @drink.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -35,10 +33,8 @@ class DrinksController < ApplicationController
     respond_to do |format|
       if @drink.update(drink_params)
         format.html { redirect_to @drink, notice: 'Drink was successfully updated.' }
-        format.json { head :no_content }
       else
         format.html { render action: 'edit' }
-        format.json { render json: @drink.errors, status: :unprocessable_entity }
       end
     end
   end

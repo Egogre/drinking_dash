@@ -9,6 +9,6 @@ one:
 
 two:
   id: 1
-  drink: two
-  order: two
+  drink: one
+  order: one
   quantity: 2

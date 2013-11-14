@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset= "utf-8">
+  <title>Dive Bar | Create Drinks </title>
+  <link data-turbolinks-track="true" href="/assets/application.css" media="all" rel="stylesheet" />
+  <script data-turbolinks-track="true" src="/assets/application.js"></script>
+  
+</head>
+<body>
+<div id="bigcon">
+  <header id="page_header" role="banner">
+    <nav id="utility">
+      <div id="login">
+          <li>
+            <a href="#">Users</a>
+          </li>
+          <li>
+            <a href="/users/113629430">Profile</a>
+          </li>
+          <li>
+            <a data-method="delete" href="/signout" rel="nofollow">Sign Out</a>
+          </li>
+      </div>
+    </nav>
+  <a href="http://www.example.com/" title="Dashboard"><img alt="Logo" id="logo" src="/assets/logo_basic_l.png" /></a>
+  </header>
+  <nav id="main_nav" role="navigation">
+    <ul>
+      <a href="/">
+      <li>Home</li>
+</a>      <a href="/categories">
+      <li>Menu</li>
+</a>      <a href="/about">
+      <li>About</li>
+</a>      <a href="/contact">
+      <li>Contact</li>
+</a>    </ul>
+  </nav>
+
+
+  <div class="container">
+    <section id="content">
+      <h4 class=><p class="flash"> 
+      </p> </h4>
+      <h4 class=><p class="badge"> 
+      </p> </h4>
+      <h1>New drink</h1>
+
+<form accept-charset="UTF-8" action="/drinks" class="simple_form new_drink" id="new_drink" method="post" novalidate="novalidate"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <div id="error_explanation">
+      <h2>1 error prohibited this drink from being saved:</h2>
+
+      <ul>
+        <li>Name has already been taken</li>
+      </ul>
+    </div>
+
+  <div class="field">
+    <label class="string required control-label" for="drink_name"><abbr title="required"></abbr> Name</label><br>
+    <input id="drink_name" name="drink[name]" type="text" value="PBR" />
+  </div>
+  <div class="field">
+    <label class="text required control-label" for="drink_description"><abbr title="required"></abbr> Description</label><br>
+    <textarea id="drink_description" name="drink[description]">
+This is a great beer.</textarea>
+  </div>
+  <div class="field">
+    <label class="decimal required control-label" for="drink_price"><abbr title="required"></abbr> Price</label><br>
+    <input id="drink_price" name="drink[price]" type="text" value="7.99" />
+  </div>
+  <br>
+  <div class="field">
+    <div class="input select optional drink_category"><label class="select optional control-label" for="drink_category_id">Category</label><select class="select optional" id="drink_category_id" name="drink[category_id]"><option selected="selected" value="980190962">beer</option>
+<option value="298486374">liquor</option></select></div><br>
+  </div>
+  <div class="actions">
+    <input name="commit" type="submit" value="Submit" />
+  </div>
+</form>
+
+<a href="/drinks">Back</a>
+
+    </section>
+    <section id="sidebar">
+  <section id="recent_activity">
+    <div class="shopping_cart">
+    <header><h1 class="ir" id="recent">Shopping Cart</h1></header>
+    
+  </div>
+  </section>
+</section>
+
+  </div>
+  <footer id="page_footer">
+<!--   <ul>
+    <li>Contact</li>
+    <li>Help</li>
+  <ul> -->
+  <p>&copy; 2013 Drinking Dash Co. </p>
+</footer>
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+

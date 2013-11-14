@@ -1,0 +1,1514 @@
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:36)
+  [1m[35mCategory Load (2.0ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."drink_type" = 'beer' ORDER BY "categories"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:36)
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."drink_type" = 'cocktails' ORDER BY "categories"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:36)
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."drink_type" = 'wine' ORDER BY "categories"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:36)
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."drink_type" = 'shots' ORDER BY "categories"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:36)
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."drink_type" = 'soft drinks' ORDER BY "categories"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (1.6ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'PBR' AND "drinks"."description" = 'The best beer ever!' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.6ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Guinness' AND "drinks"."description" = 'Brilliant!' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.5ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Yeti Imperial Stout' AND "drinks"."description" = 'Greatest Great Divide beer!' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.5ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Coors' AND "drinks"."description" = 'The banquet beer.' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.5ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Coors Light' AND "drinks"."description" = 'Taste the Rockies!' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.5ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Sam Adam''s Octoberfest' AND "drinks"."description" = 'We have this all year round.' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.4ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Pisco Sour' AND "drinks"."description" = 'Eggy!.' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.4ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'RBV' AND "drinks"."description" = 'A sweet and sour energy drink mixed with local organic grain based spirits based spirits.' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.4ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Cuba Libre' AND "drinks"."description" = 'Tradional American cola mixed with a shot of silver rum' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.4ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'An Old Fashioned' AND "drinks"."description" = 'The world famous drink served with either rye or bourben.' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.4ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Pinot Gris' AND "drinks"."description" = 'Fancy Wine' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.4ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Merlot' AND "drinks"."description" = '"I refuse to drink Merlot" - Paul Giamatti' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.5ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'House Red' AND "drinks"."description" = 'It''s Red' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.5ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'House White' AND "drinks"."description" = 'It''s not Red' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.5ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Kamikaze' AND "drinks"."description" = 'Voted best shot by the Zeta Theta Theta Sisters.' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.5ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Fireball' AND "drinks"."description" = 'It taste like Big Red gum' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.5ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Yeager Bomb' AND "drinks"."description" = 'German liquorice liquor dropped into our sweet and sour energy drink, made famous by Chuck Yeager' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.5ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Diet Coke' AND "drinks"."description" = 'Its Diet Coke' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.5ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Coffee' AND "drinks"."description" = 'Best Thing Ever' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.5ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Bottled Water' AND "drinks"."description" = 'Don''t Drink Tap.' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:44)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'madman@example.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:36)
+  [1m[35mCategory Load (1.4ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."drink_type" = 'beer' ORDER BY "categories"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:36)
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."drink_type" = 'cocktails' ORDER BY "categories"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:36)
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."drink_type" = 'wine' ORDER BY "categories"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:36)
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."drink_type" = 'shots' ORDER BY "categories"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:36)
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."drink_type" = 'soft drinks' ORDER BY "categories"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.7ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'PBR' AND "drinks"."description" = 'The best beer ever!' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.7ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Guinness' AND "drinks"."description" = 'Brilliant!' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.5ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Yeti Imperial Stout' AND "drinks"."description" = 'Greatest Great Divide beer!' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.5ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Coors' AND "drinks"."description" = 'The banquet beer.' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.5ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Coors Light' AND "drinks"."description" = 'Taste the Rockies!' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.5ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Sam Adam''s Octoberfest' AND "drinks"."description" = 'We have this all year round.' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.5ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Pisco Sour' AND "drinks"."description" = 'Eggy!.' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.5ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'RBV' AND "drinks"."description" = 'A sweet and sour energy drink mixed with local organic grain based spirits based spirits.' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.5ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Cuba Libre' AND "drinks"."description" = 'Tradional American cola mixed with a shot of silver rum' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.5ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'An Old Fashioned' AND "drinks"."description" = 'The world famous drink served with either rye or bourben.' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.5ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Pinot Gris' AND "drinks"."description" = 'Fancy Wine' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.5ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Merlot' AND "drinks"."description" = '"I refuse to drink Merlot" - Paul Giamatti' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.5ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'House Red' AND "drinks"."description" = 'It''s Red' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.5ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'House White' AND "drinks"."description" = 'It''s not Red' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.5ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Kamikaze' AND "drinks"."description" = 'Voted best shot by the Zeta Theta Theta Sisters.' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.5ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Fireball' AND "drinks"."description" = 'It taste like Big Red gum' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.4ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Yeager Bomb' AND "drinks"."description" = 'German liquorice liquor dropped into our sweet and sour energy drink, made famous by Chuck Yeager' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.5ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Diet Coke' AND "drinks"."description" = 'Its Diet Coke' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.5ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Coffee' AND "drinks"."description" = 'Best Thing Ever' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.4ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Bottled Water' AND "drinks"."description" = 'Don''t Drink Tap.' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:44)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'madman@example.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (1.6ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE (LOWER("users"."email") = LOWER('madman@example.com') AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:44)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'lizard.king@example.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE (LOWER("users"."email") = LOWER('lizard.king@example.com') AND "users"."id" != 2) LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:44)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'DaGreatFtzy@example.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('DaGreatFtzy@example.com') LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (13.0ms)[0m  INSERT INTO "sashes" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"  [["created_at", Thu, 14 Nov 2013 00:09:09 UTC +00:00], ["updated_at", Thu, 14 Nov 2013 00:09:09 UTC +00:00]]
+  [1m[36mSQL (2.8ms)[0m  [1mINSERT INTO "merit_scores" DEFAULT VALUES RETURNING "id"[0m
+  [1m[35mSQL (1.1ms)[0m  UPDATE "merit_scores" SET "sash_id" = $1 WHERE "merit_scores"."id" = 7  [["sash_id", 7]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('DaGreatFtzy@example.com') LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:44)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'demo+franklin@jumpstartlab.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE (LOWER("users"."email") = LOWER('demo+franklin@jumpstartlab.com') AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:44)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'demo+jeff@jumpstartlab.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE (LOWER("users"."email") = LOWER('demo+jeff@jumpstartlab.com') AND "users"."id" != 5) LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:44)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'demo+katrina@jumpstartlab.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE (LOWER("users"."email") = LOWER('demo+katrina@jumpstartlab.com') AND "users"."id" != 6) LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."name" = 'Don' LIMIT 1[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:36)
+  [1m[35mCategory Load (1.4ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."drink_type" = 'beer' ORDER BY "categories"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:36)
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."drink_type" = 'cocktails' ORDER BY "categories"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:36)
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."drink_type" = 'wine' ORDER BY "categories"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:36)
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."drink_type" = 'shots' ORDER BY "categories"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:36)
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."drink_type" = 'soft drinks' ORDER BY "categories"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.8ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'PBR' AND "drinks"."description" = 'The best beer ever!' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.6ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Guinness' AND "drinks"."description" = 'Brilliant!' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.5ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Yeti Imperial Stout' AND "drinks"."description" = 'Greatest Great Divide beer!' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.5ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Coors' AND "drinks"."description" = 'The banquet beer.' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.5ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Coors Light' AND "drinks"."description" = 'Taste the Rockies!' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.5ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Sam Adam''s Octoberfest' AND "drinks"."description" = 'We have this all year round.' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.5ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Pisco Sour' AND "drinks"."description" = 'Eggy!.' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.5ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'RBV' AND "drinks"."description" = 'A sweet and sour energy drink mixed with local organic grain based spirits based spirits.' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.6ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Cuba Libre' AND "drinks"."description" = 'Tradional American cola mixed with a shot of silver rum' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.5ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'An Old Fashioned' AND "drinks"."description" = 'The world famous drink served with either rye or bourben.' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.6ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Pinot Gris' AND "drinks"."description" = 'Fancy Wine' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.5ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Merlot' AND "drinks"."description" = '"I refuse to drink Merlot" - Paul Giamatti' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.5ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'House Red' AND "drinks"."description" = 'It''s Red' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.5ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'House White' AND "drinks"."description" = 'It''s not Red' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.5ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Kamikaze' AND "drinks"."description" = 'Voted best shot by the Zeta Theta Theta Sisters.' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.5ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Fireball' AND "drinks"."description" = 'It taste like Big Red gum' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.4ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Yeager Bomb' AND "drinks"."description" = 'German liquorice liquor dropped into our sweet and sour energy drink, made famous by Chuck Yeager' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.4ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Diet Coke' AND "drinks"."description" = 'Its Diet Coke' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.5ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Coffee' AND "drinks"."description" = 'Best Thing Ever' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.4ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Bottled Water' AND "drinks"."description" = 'Don''t Drink Tap.' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:44)
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'madman@example.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mUser Exists (0.8ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE (LOWER("users"."email") = LOWER('madman@example.com') AND "users"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  COMMIT
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:44)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'lizard.king@example.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mUser Exists (0.6ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE (LOWER("users"."email") = LOWER('lizard.king@example.com') AND "users"."id" != 2) LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:44)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'DaGreatFtzy@example.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('DaGreatFtzy@example.com') LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.8ms)[0m  INSERT INTO "sashes" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"  [["created_at", Thu, 14 Nov 2013 00:10:21 UTC +00:00], ["updated_at", Thu, 14 Nov 2013 00:10:21 UTC +00:00]]
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "merit_scores" DEFAULT VALUES RETURNING "id"[0m
+  [1m[35mSQL (1.0ms)[0m  UPDATE "merit_scores" SET "sash_id" = $1 WHERE "merit_scores"."id" = 8  [["sash_id", 8]]
+  [1m[36m (7.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (0.6ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('DaGreatFtzy@example.com') LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:44)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'demo+franklin@jumpstartlab.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE (LOWER("users"."email") = LOWER('demo+franklin@jumpstartlab.com') AND "users"."id" != 4) LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:44)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'demo+jeff@jumpstartlab.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE (LOWER("users"."email") = LOWER('demo+jeff@jumpstartlab.com') AND "users"."id" != 5) LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:44)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'demo+katrina@jumpstartlab.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE (LOWER("users"."email") = LOWER('demo+katrina@jumpstartlab.com') AND "users"."id" != 6) LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mDrink Load (0.5ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'An Old Fashioned' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "orders" ("created_at", "status", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Thu, 14 Nov 2013 00:10:21 UTC +00:00], ["status", "paid"], ["updated_at", Thu, 14 Nov 2013 00:10:21 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "order_items" ("created_at", "drink_id", "order_id", "quantity", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Thu, 14 Nov 2013 00:10:21 UTC +00:00], ["drink_id", 10], ["order_id", 102], ["quantity", 100], ["updated_at", Thu, 14 Nov 2013 00:10:21 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+
+
+Started GET "/s" for 127.0.0.1 at 2013-11-13 17:10:41 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/s"):
+  actionpack (4.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.1) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.1) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.1) lib/rails/engine.rb:511:in `call'
+  railties (4.0.1) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/rolenle/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/rolenle/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/rolenle/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/rolenle/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/rolenle/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.8ms)
+  Rendered /Users/rolenle/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.6ms)
+  Rendered /Users/rolenle/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (58.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-13 17:10:43 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+  [1m[35mUser Load (1.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'beaca43f985d2ccea76b872a74a23c5843d0f0bb' LIMIT 1
+  Rendered layouts/_main_nav.html.erb (1.2ms)
+  Rendered layouts/_header.html.erb (66.6ms)
+  [1m[36mOrder Load (0.8ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" IS NULL LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (4.5ms)[0m  [1mINSERT INTO "orders" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", Thu, 14 Nov 2013 00:10:45 UTC +00:00], ["updated_at", Thu, 14 Nov 2013 00:10:45 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  COMMIT
+  [1m[36mOrderItem Load (0.9ms)[0m  [1mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 103]]
+  Rendered layouts/_sidebar.html.erb (47.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 2257ms (Views: 2215.7ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-13 17:10:46 -0700
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-11-13 17:10:46 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-11-13 17:10:46 -0700
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-11-13 17:10:46 -0700
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2013-11-13 17:10:46 -0700
+
+
+Started GET "/assets/form.css?body=1" for 127.0.0.1 at 2013-11-13 17:10:46 -0700
+
+
+Started GET "/assets/sidebar.css?body=1" for 127.0.0.1 at 2013-11-13 17:10:46 -0700
+
+
+Started GET "/assets/navigation.css?body=1" for 127.0.0.1 at 2013-11-13 17:10:46 -0700
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-11-13 17:10:46 -0700
+
+
+Started GET "/assets/shopping_cart.css?body=1" for 127.0.0.1 at 2013-11-13 17:10:46 -0700
+
+
+Started GET "/assets/order_page.css?body=1" for 127.0.0.1 at 2013-11-13 17:10:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-13 17:10:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-13 17:10:46 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-13 17:10:46 -0700
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2013-11-13 17:10:46 -0700
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2013-11-13 17:10:46 -0700
+
+
+Started GET "/assets/drinks.js?body=1" for 127.0.0.1 at 2013-11-13 17:10:46 -0700
+
+
+Started GET "/assets/order_items.js?body=1" for 127.0.0.1 at 2013-11-13 17:10:46 -0700
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2013-11-13 17:10:46 -0700
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-11-13 17:10:46 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-11-13 17:10:46 -0700
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-11-13 17:10:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-13 17:10:46 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-13 17:10:46 -0700
+
+
+Started GET "/assets/logo_basic_l.png" for 127.0.0.1 at 2013-11-13 17:10:46 -0700
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2013-11-13 17:10:48 -0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Gpcbrjr5PmF4PA5t/mWXYjiPtzXDHPy97KVYPVRZbOA="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-13 17:10:48 -0700
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'da39a3ee5e6b4b0d3255bfef95601890afd80709' LIMIT 1
+  Rendered sessions/_form.html.erb (41.3ms)
+  Rendered layouts/_main_nav.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (53.6ms)
+  [1m[36mOrder Load (0.6ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" IS NULL LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "orders" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", Thu, 14 Nov 2013 00:10:48 UTC +00:00], ["updated_at", Thu, 14 Nov 2013 00:10:48 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mOrderItem Load (0.4ms)[0m  [1mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 104]]
+  Rendered layouts/_sidebar.html.erb (7.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 75ms (Views: 71.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-11-13 17:10:48 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-11-13 17:10:48 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-13 17:10:48 -0700
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2013-11-13 17:10:48 -0700
+
+
+Started GET "/assets/form.css?body=1" for 127.0.0.1 at 2013-11-13 17:10:48 -0700
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-11-13 17:10:48 -0700
+
+
+Started GET "/assets/sidebar.css?body=1" for 127.0.0.1 at 2013-11-13 17:10:48 -0700
+
+
+Started GET "/assets/navigation.css?body=1" for 127.0.0.1 at 2013-11-13 17:10:48 -0700
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-11-13 17:10:48 -0700
+
+
+Started GET "/assets/shopping_cart.css?body=1" for 127.0.0.1 at 2013-11-13 17:10:48 -0700
+
+
+Started GET "/assets/order_page.css?body=1" for 127.0.0.1 at 2013-11-13 17:10:48 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-13 17:10:48 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-13 17:10:48 -0700
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2013-11-13 17:10:48 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-13 17:10:48 -0700
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2013-11-13 17:10:48 -0700
+
+
+Started GET "/assets/drinks.js?body=1" for 127.0.0.1 at 2013-11-13 17:10:48 -0700
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-11-13 17:10:48 -0700
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-11-13 17:10:48 -0700
+
+
+Started GET "/assets/order_items.js?body=1" for 127.0.0.1 at 2013-11-13 17:10:48 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-11-13 17:10:48 -0700
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2013-11-13 17:10:48 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-13 17:10:48 -0700
+
+
+Started GET "/assets/logo_basic_l.png" for 127.0.0.1 at 2013-11-13 17:10:48 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-13 17:10:48 -0700
+
+
+Started POST "/sessions" for 127.0.0.1 at 2013-11-13 17:11:01 -0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Gpcbrjr5PmF4PA5t/mWXYjiPtzXDHPy97KVYPVRZbOA=", "session"=>{"email"=>"demo+katrina@jumpstartlab.com", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'demo+katrina@jumpstartlab.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  UPDATE "users" SET "remember_token" = $1, "updated_at" = $2 WHERE "users"."id" = 6  [["remember_token", "13159231c295a19e593aa8f7ec401745f6eb97ad"], ["updated_at", Thu, 14 Nov 2013 00:11:01 UTC +00:00]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 101ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2013-11-13 17:11:01 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (1.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", "6"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", "6"]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '13159231c295a19e593aa8f7ec401745f6eb97ad' LIMIT 1
+  [1m[36mMerit::Sash Load (1.0ms)[0m  [1mSELECT "sashes".* FROM "sashes" WHERE "sashes"."id" = $1 ORDER BY "sashes"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mMerit::BadgesSash Load (1.3ms)[0m  SELECT "badges_sashes".* FROM "badges_sashes" WHERE "badges_sashes"."sash_id" = $1  [["sash_id", 6]]
+  [1m[36mOrder Load (1.0ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."user_id" = $1[0m  [["user_id", 6]]
+  Rendered users/show.html.erb within layouts/application (22.5ms)
+  Rendered layouts/_main_nav.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  [1m[35mOrder Load (0.5ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" IS NULL LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "orders" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"  [["created_at", Thu, 14 Nov 2013 00:11:01 UTC +00:00], ["updated_at", Thu, 14 Nov 2013 00:11:01 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrderItem Load (0.4ms)[0m  SELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1  [["order_id", 105]]
+  Rendered layouts/_sidebar.html.erb (5.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 51ms (Views: 36.1ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-13 17:11:01 -0700
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-11-13 17:11:01 -0700
+
+
+Started GET "/assets/form.css?body=1" for 127.0.0.1 at 2013-11-13 17:11:01 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-11-13 17:11:01 -0700
+
+
+Started GET "/assets/navigation.css?body=1" for 127.0.0.1 at 2013-11-13 17:11:01 -0700
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2013-11-13 17:11:01 -0700
+
+
+Started GET "/assets/sidebar.css?body=1" for 127.0.0.1 at 2013-11-13 17:11:01 -0700
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-11-13 17:11:01 -0700
+
+
+Started GET "/assets/shopping_cart.css?body=1" for 127.0.0.1 at 2013-11-13 17:11:01 -0700
+
+
+Started GET "/assets/order_page.css?body=1" for 127.0.0.1 at 2013-11-13 17:11:01 -0700
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-11-13 17:11:01 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-13 17:11:01 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-13 17:11:01 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-13 17:11:01 -0700
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2013-11-13 17:11:01 -0700
+
+
+Started GET "/assets/drinks.js?body=1" for 127.0.0.1 at 2013-11-13 17:11:01 -0700
+
+
+Started GET "/assets/order_items.js?body=1" for 127.0.0.1 at 2013-11-13 17:11:01 -0700
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2013-11-13 17:11:01 -0700
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-11-13 17:11:01 -0700
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-11-13 17:11:01 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-13 17:11:01 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-11-13 17:11:01 -0700
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2013-11-13 17:11:01 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-13 17:11:01 -0700
+
+
+Started GET "/assets/logo_basic_l.png" for 127.0.0.1 at 2013-11-13 17:11:01 -0700
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2013-11-13 17:11:05 -0700
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '13159231c295a19e593aa8f7ec401745f6eb97ad' LIMIT 1[0m
+  [1m[35mMerit::Sash Load (0.5ms)[0m  SELECT "sashes".* FROM "sashes" WHERE "sashes"."id" = $1 ORDER BY "sashes"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mMerit::BadgesSash Load (0.5ms)[0m  [1mSELECT "badges_sashes".* FROM "badges_sashes" WHERE "badges_sashes"."sash_id" = $1[0m  [["sash_id", 6]]
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "badges_sashes" ("badge_id", "created_at", "sash_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["badge_id", 4], ["created_at", Thu, 14 Nov 2013 00:11:05 UTC +00:00], ["sash_id", 6]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mOrder Load (0.9ms)[0m  [1mSELECT "orders".* FROM "orders"[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mOrderItem Load (0.5ms)[0m  [1mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 78]]
+  [1m[35mDrink Load (0.9ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrderItem Load (0.6ms)[0m  SELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1  [["order_id", 98]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mOrderItem Load (0.5ms)[0m  [1mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 80]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrderItem Load (0.3ms)[0m  SELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1  [["order_id", 41]]
+  [1m[36mDrink Load (0.4ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1[0m  [["id", 10]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mOrderItem Load (0.4ms)[0m  [1mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 84]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mDrink Load (0.4ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mOrderItem Load (0.3ms)[0m  [1mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 43]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrderItem Load (0.3ms)[0m  SELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1  [["order_id", 47]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mOrderItem Load (0.3ms)[0m  [1mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 51]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mOrderItem Load (0.3ms)[0m  [1mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 53]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrderItem Load (0.4ms)[0m  SELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1  [["order_id", 58]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mDrink Load (0.5ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mDrink Load (0.4ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1[0m  [["id", 4]]
+  [1m[35mDrink Load (0.5ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mDrink Load (0.3ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1  [["id", 10]]
+  [1m[36mDrink Load (0.3ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrderItem Load (0.4ms)[0m  SELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1  [["order_id", 63]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mOrderItem Load (0.4ms)[0m  [1mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 67]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrderItem Load (0.4ms)[0m  SELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1  [["order_id", 69]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mOrderItem Load (0.4ms)[0m  [1mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 71]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mOrderItem Load (0.3ms)[0m  SELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1  [["order_id", 89]]
+  [1m[36mDrink Load (0.3ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1[0m  [["id", 18]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mOrderItem Load (0.3ms)[0m  [1mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 93]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrderItem Load (0.4ms)[0m  SELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1  [["order_id", 102]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1[0m  [["id", 10]]
+  Rendered dashboard/_order.html.erb (89.1ms)
+  [1m[35mCategory Load (0.7ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mDrink Load (0.6ms)[0m  [1mSELECT "drinks".* FROM "drinks"[0m
+  Rendered dashboard/index.html.erb within layouts/application (102.8ms)
+  Rendered layouts/_main_nav.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (4.8ms)
+  [1m[35mOrder Load (0.6ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" IS NULL LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "orders" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"  [["created_at", Thu, 14 Nov 2013 00:11:05 UTC +00:00], ["updated_at", Thu, 14 Nov 2013 00:11:05 UTC +00:00]]
+  [1m[36m (6.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrderItem Load (0.4ms)[0m  SELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1  [["order_id", 106]]
+  Rendered layouts/_sidebar.html.erb (13.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 167ms (Views: 106.1ms | ActiveRecord: 33.4ms)
+
+
+Started GET "/assets/logo_basic_l.png" for 127.0.0.1 at 2013-11-13 17:11:05 -0700
+
+
+Started GET "/drinks/new" for 127.0.0.1 at 2013-11-13 17:17:31 -0700
+Processing by DrinksController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '13159231c295a19e593aa8f7ec401745f6eb97ad' LIMIT 1[0m
+  [1m[35mCategory Load (0.6ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered drinks/_form.html.erb (15.3ms)
+  Rendered drinks/new.html.erb within layouts/application (17.4ms)
+  Rendered layouts/_main_nav.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+  [1m[36mOrder Load (0.6ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" IS NULL LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "orders" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", Thu, 14 Nov 2013 00:17:31 UTC +00:00], ["updated_at", Thu, 14 Nov 2013 00:17:31 UTC +00:00]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36mOrderItem Load (0.4ms)[0m  [1mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 107]]
+  Rendered layouts/_sidebar.html.erb (6.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 41ms (Views: 34.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/logo_basic_l.png" for 127.0.0.1 at 2013-11-13 17:17:31 -0700
+
+
+Started POST "/drinks" for 127.0.0.1 at 2013-11-13 17:22:10 -0700
+Processing by DrinksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Gpcbrjr5PmF4PA5t/mWXYjiPtzXDHPy97KVYPVRZbOA=", "drink"=>{"name"=>"Bud Light", "description"=>"Water but it taste bad", "price"=>"1.00", "category_id"=>"1"}, "commit"=>"Submit"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '13159231c295a19e593aa8f7ec401745f6eb97ad' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mDrink Exists (0.4ms)[0m  SELECT 1 AS one FROM "drinks" WHERE "drinks"."name" = 'Bud Light' LIMIT 1
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "drinks" ("category_id", "created_at", "description", "name", "price", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["category_id", 1], ["created_at", Thu, 14 Nov 2013 00:22:10 UTC +00:00], ["description", "Water but it taste bad"], ["name", "Bud Light"], ["price", #<BigDecimal:7fd6e92dbe38,'0.1E1',9(18)>], ["updated_at", Thu, 14 Nov 2013 00:22:10 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/drinks/21
+Completed 302 Found in 23ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/drinks/21" for 127.0.0.1 at 2013-11-13 17:22:10 -0700
+Processing by DrinksController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mDrink Load (0.7ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 LIMIT 1[0m  [["id", "21"]]
+  Rendered drinks/show.html.erb within layouts/application (1.6ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '13159231c295a19e593aa8f7ec401745f6eb97ad' LIMIT 1
+  Rendered layouts/_main_nav.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (3.7ms)
+  [1m[36mOrder Load (0.5ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" IS NULL LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "orders" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", Thu, 14 Nov 2013 00:22:10 UTC +00:00], ["updated_at", Thu, 14 Nov 2013 00:22:10 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mOrderItem Load (0.4ms)[0m  [1mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 108]]
+  Rendered layouts/_sidebar.html.erb (5.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 25ms (Views: 19.9ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-13 17:22:10 -0700
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-11-13 17:22:10 -0700
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-11-13 17:22:10 -0700
+
+
+Started GET "/assets/sidebar.css?body=1" for 127.0.0.1 at 2013-11-13 17:22:10 -0700
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2013-11-13 17:22:10 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-11-13 17:22:10 -0700
+
+
+Started GET "/assets/form.css?body=1" for 127.0.0.1 at 2013-11-13 17:22:10 -0700
+
+
+Started GET "/assets/navigation.css?body=1" for 127.0.0.1 at 2013-11-13 17:22:10 -0700
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-11-13 17:22:10 -0700
+
+
+Started GET "/assets/shopping_cart.css?body=1" for 127.0.0.1 at 2013-11-13 17:22:10 -0700
+
+
+Started GET "/assets/order_page.css?body=1" for 127.0.0.1 at 2013-11-13 17:22:10 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-13 17:22:10 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-13 17:22:10 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-13 17:22:10 -0700
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2013-11-13 17:22:10 -0700
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2013-11-13 17:22:10 -0700
+
+
+Started GET "/assets/drinks.js?body=1" for 127.0.0.1 at 2013-11-13 17:22:10 -0700
+
+
+Started GET "/assets/order_items.js?body=1" for 127.0.0.1 at 2013-11-13 17:22:10 -0700
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2013-11-13 17:22:10 -0700
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-11-13 17:22:10 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-11-13 17:22:10 -0700
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-11-13 17:22:10 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-13 17:22:10 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-13 17:22:10 -0700
+
+
+Started GET "/assets/logo_basic_l.png" for 127.0.0.1 at 2013-11-13 17:22:10 -0700
+
+
+Started GET "/drinks/21/edit" for 127.0.0.1 at 2013-11-13 17:27:53 -0700
+Processing by DrinksController#edit as HTML
+  Parameters: {"id"=>"21"}
+  [1m[35mDrink Load (0.5ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 LIMIT 1  [["id", "21"]]
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '13159231c295a19e593aa8f7ec401745f6eb97ad' LIMIT 1[0m
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered drinks/_form.html.erb (21.4ms)
+  Rendered drinks/edit.html.erb within layouts/application (24.6ms)
+  Rendered layouts/_main_nav.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  [1m[36mOrder Load (0.5ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" IS NULL LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "orders" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", Thu, 14 Nov 2013 00:27:53 UTC +00:00], ["updated_at", Thu, 14 Nov 2013 00:27:53 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mOrderItem Load (0.4ms)[0m  [1mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 109]]
+  Rendered layouts/_sidebar.html.erb (23.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 111ms (Views: 62.0ms | ActiveRecord: 13.2ms)
+
+
+Started GET "/assets/logo_basic_l.png" for 127.0.0.1 at 2013-11-13 17:27:53 -0700
+
+
+Started GET "/categories/new" for 127.0.0.1 at 2013-11-13 17:58:01 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CategoriesController#new as HTML
+  [1m[35mUser Load (1.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '13159231c295a19e593aa8f7ec401745f6eb97ad' LIMIT 1
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/_form.html.erb (135.3ms)
+  Rendered categories/new.html.erb within layouts/application (141.1ms)
+  Rendered layouts/_main_nav.html.erb (1.4ms)
+  Rendered layouts/_header.html.erb (8.1ms)
+  [1m[35mOrder Load (0.8ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" IS NULL LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (6.8ms)[0m  INSERT INTO "orders" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"  [["created_at", Thu, 14 Nov 2013 00:58:01 UTC +00:00], ["updated_at", Thu, 14 Nov 2013 00:58:01 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrderItem Load (1.0ms)[0m  SELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1  [["order_id", 110]]
+  Rendered layouts/_sidebar.html.erb (139.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 509ms (Views: 425.5ms | ActiveRecord: 20.6ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-11-13 17:58:02 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-11-13 17:58:02 -0700
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-11-13 17:58:02 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-13 17:58:02 -0700
+
+
+Started GET "/assets/form.css?body=1" for 127.0.0.1 at 2013-11-13 17:58:02 -0700
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2013-11-13 17:58:02 -0700
+
+
+Started GET "/assets/sidebar.css?body=1" for 127.0.0.1 at 2013-11-13 17:58:02 -0700
+
+
+Started GET "/assets/navigation.css?body=1" for 127.0.0.1 at 2013-11-13 17:58:02 -0700
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-11-13 17:58:02 -0700
+
+
+Started GET "/assets/shopping_cart.css?body=1" for 127.0.0.1 at 2013-11-13 17:58:02 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-13 17:58:02 -0700
+
+
+Started GET "/assets/order_page.css?body=1" for 127.0.0.1 at 2013-11-13 17:58:02 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-13 17:58:02 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-13 17:58:02 -0700
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2013-11-13 17:58:02 -0700
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2013-11-13 17:58:02 -0700
+
+
+Started GET "/assets/drinks.js?body=1" for 127.0.0.1 at 2013-11-13 17:58:02 -0700
+
+
+Started GET "/assets/order_items.js?body=1" for 127.0.0.1 at 2013-11-13 17:58:02 -0700
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2013-11-13 17:58:02 -0700
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-11-13 17:58:02 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-11-13 17:58:02 -0700
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-11-13 17:58:02 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-13 17:58:02 -0700
+
+
+Started GET "/assets/logo_basic_l.png" for 127.0.0.1 at 2013-11-13 17:58:02 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-13 17:58:02 -0700
+
+
+Started GET "/categories" for 127.0.0.1 at 2013-11-13 17:59:23 -0700
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/_breadcrumbs.html.erb (4.7ms)
+  [1m[35mDrink Load (0.9ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."category_id" = $1  [["category_id", 1]]
+  [1m[36mDrink Load (0.7ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."category_id" = $1[0m  [["category_id", 2]]
+  [1m[35mDrink Load (0.6ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."category_id" = $1  [["category_id", 3]]
+  [1m[36mDrink Load (0.5ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."category_id" = $1[0m  [["category_id", 4]]
+  [1m[35mDrink Load (0.6ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."category_id" = $1  [["category_id", 5]]
+  Rendered categories/index.html.erb within layouts/application (74.3ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '13159231c295a19e593aa8f7ec401745f6eb97ad' LIMIT 1[0m
+  Rendered layouts/_main_nav.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (4.5ms)
+  [1m[35mOrder Load (0.5ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" IS NULL LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "orders" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"  [["created_at", Thu, 14 Nov 2013 00:59:23 UTC +00:00], ["updated_at", Thu, 14 Nov 2013 00:59:23 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrderItem Load (0.6ms)[0m  SELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1  [["order_id", 111]]
+  Rendered layouts/_sidebar.html.erb (6.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 104ms (Views: 92.5ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2013-11-13 17:59:23 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-13 17:59:23 -0700
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-11-13 17:59:23 -0700
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-11-13 17:59:23 -0700
+
+
+Started GET "/assets/form.css?body=1" for 127.0.0.1 at 2013-11-13 17:59:23 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-11-13 17:59:23 -0700
+
+
+Started GET "/assets/sidebar.css?body=1" for 127.0.0.1 at 2013-11-13 17:59:23 -0700
+
+
+Started GET "/assets/navigation.css?body=1" for 127.0.0.1 at 2013-11-13 17:59:23 -0700
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-11-13 17:59:23 -0700
+
+
+Started GET "/assets/shopping_cart.css?body=1" for 127.0.0.1 at 2013-11-13 17:59:23 -0700
+
+
+Started GET "/assets/order_page.css?body=1" for 127.0.0.1 at 2013-11-13 17:59:23 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-13 17:59:23 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-13 17:59:23 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-13 17:59:23 -0700
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2013-11-13 17:59:23 -0700
+
+
+Started GET "/assets/order_items.js?body=1" for 127.0.0.1 at 2013-11-13 17:59:23 -0700
+
+
+Started GET "/assets/drinks.js?body=1" for 127.0.0.1 at 2013-11-13 17:59:23 -0700
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2013-11-13 17:59:23 -0700
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2013-11-13 17:59:23 -0700
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-11-13 17:59:24 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-11-13 17:59:24 -0700
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-11-13 17:59:24 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-13 17:59:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-13 17:59:24 -0700
+
+
+Started GET "/assets/logo_basic_l.png" for 127.0.0.1 at 2013-11-13 17:59:24 -0700
+
+
+Started GET "/assets/shotglass.png" for 127.0.0.1 at 2013-11-13 17:59:24 -0700
+
+
+Started GET "/assets/cocktail.png" for 127.0.0.1 at 2013-11-13 17:59:24 -0700
+
+
+Started GET "/assets/cask.png" for 127.0.0.1 at 2013-11-13 17:59:24 -0700
+
+
+Started GET "/assets/soda.png" for 127.0.0.1 at 2013-11-13 17:59:24 -0700
+
+
+Started GET "/assets/beer.png" for 127.0.0.1 at 2013-11-13 17:59:24 -0700
+
+
+Started GET "/categories/1" for 127.0.0.1 at 2013-11-13 18:03:23 -0700
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCategory Load (0.9ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/_breadcrumbs.html.erb (3.4ms)
+  [1m[36mDrink Load (0.7ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."category_id" = $1[0m  [["category_id", 1]]
+  Rendered categories/_list.html.erb (7.9ms)
+  Rendered categories/show.html.erb within layouts/application (14.6ms)
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = '13159231c295a19e593aa8f7ec401745f6eb97ad' LIMIT 1
+  Rendered layouts/_main_nav.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (4.6ms)
+  [1m[36mOrder Load (2.2ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" IS NULL LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "orders" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", Thu, 14 Nov 2013 01:03:23 UTC +00:00], ["updated_at", Thu, 14 Nov 2013 01:03:23 UTC +00:00]]
+  [1m[35m (1.3ms)[0m  COMMIT
+  [1m[36mOrderItem Load (0.8ms)[0m  [1mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 112]]
+  Rendered layouts/_sidebar.html.erb (11.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 47ms (Views: 35.1ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-11-13 18:03:24 -0700
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2013-11-13 18:03:24 -0700
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-11-13 18:03:24 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-11-13 18:03:24 -0700
+
+
+Started GET "/assets/sidebar.css?body=1" for 127.0.0.1 at 2013-11-13 18:03:24 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-13 18:03:24 -0700
+
+
+Started GET "/assets/form.css?body=1" for 127.0.0.1 at 2013-11-13 18:03:24 -0700
+
+
+Started GET "/assets/navigation.css?body=1" for 127.0.0.1 at 2013-11-13 18:03:24 -0700
+
+
+Started GET "/assets/shopping_cart.css?body=1" for 127.0.0.1 at 2013-11-13 18:03:24 -0700
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-11-13 18:03:24 -0700
+
+
+Started GET "/assets/order_page.css?body=1" for 127.0.0.1 at 2013-11-13 18:03:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-13 18:03:24 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-13 18:03:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-13 18:03:24 -0700
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2013-11-13 18:03:24 -0700
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2013-11-13 18:03:24 -0700
+
+
+Started GET "/assets/drinks.js?body=1" for 127.0.0.1 at 2013-11-13 18:03:24 -0700
+
+
+Started GET "/assets/order_items.js?body=1" for 127.0.0.1 at 2013-11-13 18:03:24 -0700
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2013-11-13 18:03:24 -0700
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-11-13 18:03:24 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-11-13 18:03:24 -0700
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-11-13 18:03:24 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-13 18:03:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-13 18:03:24 -0700
+
+
+Started GET "/assets/logo_basic_l.png" for 127.0.0.1 at 2013-11-13 18:03:24 -0700
+
+
+Started GET "/assets/beer.png" for 127.0.0.1 at 2013-11-13 18:03:24 -0700
+
+
+Started GET "/categories/1/edit" for 127.0.0.1 at 2013-11-13 18:03:27 -0700
+Processing by CategoriesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '13159231c295a19e593aa8f7ec401745f6eb97ad' LIMIT 1[0m
+  [1m[35mCategory Load (0.6ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/_form.html.erb (5.7ms)
+  Rendered categories/edit.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_main_nav.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  [1m[36mOrder Load (0.5ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" IS NULL LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "orders" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", Thu, 14 Nov 2013 01:03:27 UTC +00:00], ["updated_at", Thu, 14 Nov 2013 01:03:27 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mOrderItem Load (0.5ms)[0m  [1mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 113]]
+  Rendered layouts/_sidebar.html.erb (6.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 30ms (Views: 22.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-13 18:03:27 -0700
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-11-13 18:03:27 -0700
+
+
+Started GET "/assets/form.css?body=1" for 127.0.0.1 at 2013-11-13 18:03:27 -0700
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-11-13 18:03:27 -0700
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2013-11-13 18:03:27 -0700
+
+
+Started GET "/assets/sidebar.css?body=1" for 127.0.0.1 at 2013-11-13 18:03:27 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-11-13 18:03:27 -0700
+
+
+Started GET "/assets/navigation.css?body=1" for 127.0.0.1 at 2013-11-13 18:03:27 -0700
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-11-13 18:03:27 -0700
+
+
+Started GET "/assets/shopping_cart.css?body=1" for 127.0.0.1 at 2013-11-13 18:03:27 -0700
+
+
+Started GET "/assets/order_page.css?body=1" for 127.0.0.1 at 2013-11-13 18:03:27 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-13 18:03:27 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-13 18:03:27 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-13 18:03:27 -0700
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2013-11-13 18:03:27 -0700
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2013-11-13 18:03:27 -0700
+
+
+Started GET "/assets/drinks.js?body=1" for 127.0.0.1 at 2013-11-13 18:03:27 -0700
+
+
+Started GET "/assets/order_items.js?body=1" for 127.0.0.1 at 2013-11-13 18:03:27 -0700
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2013-11-13 18:03:27 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-13 18:03:27 -0700
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-11-13 18:03:27 -0700
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-11-13 18:03:27 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-11-13 18:03:27 -0700
+
+
+Started GET "/assets/logo_basic_l.png" for 127.0.0.1 at 2013-11-13 18:03:27 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-13 18:03:27 -0700
+
+
+Started DELETE "/categories/1" for 127.0.0.1 at 2013-11-13 18:08:18 -0700
+Processing by CategoriesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Gpcbrjr5PmF4PA5t/mWXYjiPtzXDHPy97KVYPVRZbOA=", "id"=>"1"}
+  [1m[35mCategory Load (0.8ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '13159231c295a19e593aa8f7ec401745f6eb97ad' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.2ms)[0m  [1mDELETE FROM "categories" WHERE "categories"."id" = $1[0m  [["id", 1]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 12ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2013-11-13 18:08:18 -0700
+Processing by DashboardController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '13159231c295a19e593aa8f7ec401745f6eb97ad' LIMIT 1[0m
+  [1m[35mMerit::Sash Load (1.5ms)[0m  SELECT "sashes".* FROM "sashes" WHERE "sashes"."id" = $1 ORDER BY "sashes"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mMerit::BadgesSash Load (1.2ms)[0m  [1mSELECT "badges_sashes".* FROM "badges_sashes" WHERE "badges_sashes"."sash_id" = $1[0m  [["sash_id", 6]]
+  [1m[35mOrder Load (1.3ms)[0m  SELECT "orders".* FROM "orders"
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrderItem Load (0.5ms)[0m  SELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1  [["order_id", 78]]
+  [1m[36mDrink Load (1.2ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mOrderItem Load (0.5ms)[0m  [1mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 98]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrderItem Load (0.3ms)[0m  SELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1  [["order_id", 80]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mOrderItem Load (0.5ms)[0m  [1mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 41]]
+  [1m[35mDrink Load (0.7ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1  [["id", 10]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrderItem Load (0.5ms)[0m  SELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1  [["order_id", 84]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mDrink Load (0.5ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrderItem Load (0.4ms)[0m  SELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1  [["order_id", 43]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mOrderItem Load (0.4ms)[0m  [1mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 47]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrderItem Load (0.4ms)[0m  SELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1  [["order_id", 51]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrderItem Load (0.7ms)[0m  SELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1  [["order_id", 53]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mOrderItem Load (0.4ms)[0m  [1mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 58]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mDrink Load (0.4ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mDrink Load (0.4ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mDrink Load (0.5ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mDrink Load (0.4ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1[0m  [["id", 10]]
+  [1m[35mDrink Load (0.3ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mOrderItem Load (0.5ms)[0m  [1mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 63]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrderItem Load (0.4ms)[0m  SELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1  [["order_id", 67]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mOrderItem Load (0.4ms)[0m  [1mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 69]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrderItem Load (0.3ms)[0m  SELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1  [["order_id", 71]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1[0m  [["id", 5]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1  [["id", 5]]
+  [1m[36mOrderItem Load (0.4ms)[0m  [1mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 89]]
+  [1m[35mDrink Load (0.6ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1  [["id", 18]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mOrderItem Load (0.4ms)[0m  SELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1  [["order_id", 93]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1[0m  [["id", 6]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mOrderItem Load (0.3ms)[0m  [1mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 102]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."id" = $1 ORDER BY "drinks"."id" ASC LIMIT 1  [["id", 10]]
+  Rendered dashboard/_order.html.erb (92.3ms)
+  [1m[36mCategory Load (0.9ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mDrink Load (0.6ms)[0m  SELECT "drinks".* FROM "drinks"
+  Rendered dashboard/index.html.erb within layouts/application (102.0ms)
+  Rendered layouts/_main_nav.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+  [1m[36mOrder Load (0.4ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" IS NULL LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "orders" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", Thu, 14 Nov 2013 01:08:18 UTC +00:00], ["updated_at", Thu, 14 Nov 2013 01:08:18 UTC +00:00]]
+  [1m[35m (6.8ms)[0m  COMMIT
+  [1m[36mOrderItem Load (0.5ms)[0m  [1mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 114]]
+  Rendered layouts/_sidebar.html.erb (13.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 170ms (Views: 104.5ms | ActiveRecord: 35.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-13 18:08:18 -0700
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-11-13 18:08:18 -0700
+
+
+Started GET "/assets/form.css?body=1" for 127.0.0.1 at 2013-11-13 18:08:18 -0700
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2013-11-13 18:08:18 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-11-13 18:08:18 -0700
+
+
+Started GET "/assets/sidebar.css?body=1" for 127.0.0.1 at 2013-11-13 18:08:18 -0700
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-11-13 18:08:18 -0700
+
+
+Started GET "/assets/navigation.css?body=1" for 127.0.0.1 at 2013-11-13 18:08:18 -0700
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-11-13 18:08:18 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-13 18:08:18 -0700
+
+
+Started GET "/assets/shopping_cart.css?body=1" for 127.0.0.1 at 2013-11-13 18:08:18 -0700
+
+
+Started GET "/assets/order_page.css?body=1" for 127.0.0.1 at 2013-11-13 18:08:18 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-13 18:08:18 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-13 18:08:18 -0700
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2013-11-13 18:08:18 -0700
+
+
+Started GET "/assets/drinks.js?body=1" for 127.0.0.1 at 2013-11-13 18:08:18 -0700
+
+
+Started GET "/assets/order_items.js?body=1" for 127.0.0.1 at 2013-11-13 18:08:18 -0700
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2013-11-13 18:08:18 -0700
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2013-11-13 18:08:18 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-11-13 18:08:18 -0700
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-11-13 18:08:18 -0700
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-11-13 18:08:18 -0700
+
+
+Started GET "/assets/logo_basic_l.png" for 127.0.0.1 at 2013-11-13 18:08:18 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-13 18:08:18 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-13 18:08:18 -0700
+
+
+Started GET "/categories" for 127.0.0.1 at 2013-11-13 18:08:35 -0700
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.6ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/_breadcrumbs.html.erb (3.5ms)
+  [1m[36mDrink Load (0.4ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."category_id" = $1[0m  [["category_id", 2]]
+  [1m[35mDrink Load (0.4ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."category_id" = $1  [["category_id", 3]]
+  [1m[36mDrink Load (0.5ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."category_id" = $1[0m  [["category_id", 4]]
+  [1m[35mDrink Load (0.4ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."category_id" = $1  [["category_id", 5]]
+  Rendered categories/index.html.erb within layouts/application (19.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = '13159231c295a19e593aa8f7ec401745f6eb97ad' LIMIT 1[0m
+  Rendered layouts/_main_nav.html.erb (1.8ms)
+  Rendered layouts/_header.html.erb (7.1ms)
+  [1m[35mOrder Load (0.5ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" IS NULL LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "orders" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"  [["created_at", Thu, 14 Nov 2013 01:08:35 UTC +00:00], ["updated_at", Thu, 14 Nov 2013 01:08:35 UTC +00:00]]
+  [1m[36m (6.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mOrderItem Load (0.4ms)[0m  SELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1  [["order_id", 115]]
+  Rendered layouts/_sidebar.html.erb (13.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 52ms (Views: 39.6ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/assets/logo_basic_l.png" for 127.0.0.1 at 2013-11-13 18:08:35 -0700
+
+
+Started GET "/assets/soda.png" for 127.0.0.1 at 2013-11-13 18:08:35 -0700
+
+
+Started GET "/assets/shotglass.png" for 127.0.0.1 at 2013-11-13 18:08:35 -0700
+
+
+Started GET "/assets/cocktail.png" for 127.0.0.1 at 2013-11-13 18:08:35 -0700
+
+
+Started GET "/assets/cask.png" for 127.0.0.1 at 2013-11-13 18:08:35 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:36)
+  [1m[35mCategory Load (1.2ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."drink_type" = 'beer' ORDER BY "categories"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (5.8ms)[0m  INSERT INTO "categories" ("created_at", "drink_type", "image_url", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Thu, 14 Nov 2013 01:09:38 UTC +00:00], ["drink_type", "beer"], ["image_url", "beer.png"], ["updated_at", Thu, 14 Nov 2013 01:09:38 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:36)
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."drink_type" = 'cocktails' ORDER BY "categories"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:36)
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."drink_type" = 'wine' ORDER BY "categories"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:36)
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."drink_type" = 'shots' ORDER BY "categories"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:36)
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."drink_type" = 'soft drinks' ORDER BY "categories"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.7ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'PBR' AND "drinks"."description" = 'The best beer ever!' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.6ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Guinness' AND "drinks"."description" = 'Brilliant!' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.3ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Yeti Imperial Stout' AND "drinks"."description" = 'Greatest Great Divide beer!' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.5ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Coors' AND "drinks"."description" = 'The banquet beer.' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.4ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Coors Light' AND "drinks"."description" = 'Taste the Rockies!' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.3ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Sam Adam''s Octoberfest' AND "drinks"."description" = 'We have this all year round.' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.3ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Pisco Sour' AND "drinks"."description" = 'Eggy!.' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.4ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'RBV' AND "drinks"."description" = 'A sweet and sour energy drink mixed with local organic grain based spirits based spirits.' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.3ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Cuba Libre' AND "drinks"."description" = 'Tradional American cola mixed with a shot of silver rum' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.4ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'An Old Fashioned' AND "drinks"."description" = 'The world famous drink served with either rye or bourben.' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.3ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Pinot Gris' AND "drinks"."description" = 'Fancy Wine' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.3ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Merlot' AND "drinks"."description" = '"I refuse to drink Merlot" - Paul Giamatti' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.4ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'House Red' AND "drinks"."description" = 'It''s Red' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.3ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'House White' AND "drinks"."description" = 'It''s not Red' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.3ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Kamikaze' AND "drinks"."description" = 'Voted best shot by the Zeta Theta Theta Sisters.' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.3ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Fireball' AND "drinks"."description" = 'It taste like Big Red gum' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.3ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Yeager Bomb' AND "drinks"."description" = 'German liquorice liquor dropped into our sweet and sour energy drink, made famous by Chuck Yeager' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.3ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Diet Coke' AND "drinks"."description" = 'Its Diet Coke' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[35mDrink Load (0.3ms)[0m  SELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Coffee' AND "drinks"."description" = 'Best Thing Ever' ORDER BY "drinks"."id" ASC LIMIT 1
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by!(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:40)
+  [1m[36mDrink Load (0.3ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'Bottled Water' AND "drinks"."description" = 'Don''t Drink Tap.' ORDER BY "drinks"."id" ASC LIMIT 1[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:44)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'madman@example.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.8ms)[0m  SELECT 1 AS one FROM "users" WHERE (LOWER("users"."email") = LOWER('madman@example.com') AND "users"."id" != 1) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:44)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'lizard.king@example.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE (LOWER("users"."email") = LOWER('lizard.king@example.com') AND "users"."id" != 2) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:44)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'DaGreatFtzy@example.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('DaGreatFtzy@example.com') LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "sashes" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", Thu, 14 Nov 2013 01:09:39 UTC +00:00], ["updated_at", Thu, 14 Nov 2013 01:09:39 UTC +00:00]]
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "merit_scores" DEFAULT VALUES RETURNING "id"
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "merit_scores" SET "sash_id" = $1 WHERE "merit_scores"."id" = 9[0m  [["sash_id", 9]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('DaGreatFtzy@example.com') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:44)
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'demo+franklin@jumpstartlab.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE (LOWER("users"."email") = LOWER('demo+franklin@jumpstartlab.com') AND "users"."id" != 4) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:44)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'demo+jeff@jumpstartlab.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE (LOWER("users"."email") = LOWER('demo+jeff@jumpstartlab.com') AND "users"."id" != 5) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.find_or_create_by(name: 'foo') instead. (called from block in <top (required)> at /Users/rolenle/Projects/gschool/ruby/rails/drink-drink/db/seeds.rb:44)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'demo+katrina@jumpstartlab.com' ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE (LOWER("users"."email") = LOWER('demo+katrina@jumpstartlab.com') AND "users"."id" != 6) LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mDrink Load (0.3ms)[0m  [1mSELECT "drinks".* FROM "drinks" WHERE "drinks"."name" = 'An Old Fashioned' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "orders" ("created_at", "status", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Thu, 14 Nov 2013 01:09:39 UTC +00:00], ["status", "paid"], ["updated_at", Thu, 14 Nov 2013 01:09:39 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "order_items" ("created_at", "drink_id", "order_id", "quantity", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Thu, 14 Nov 2013 01:09:39 UTC +00:00], ["drink_id", 10], ["order_id", 116], ["quantity", 100], ["updated_at", Thu, 14 Nov 2013 01:09:39 UTC +00:00]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m

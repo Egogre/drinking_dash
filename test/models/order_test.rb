@@ -5,7 +5,7 @@ class OrderTest < ActiveSupport::TestCase
 
   def test_shopping_cart_returns_grand_total
     order = Order.all.last
-    assert_equal 9.99, order.grand_total.to_f
+    assert_equal 29.97, order.grand_total.to_f
   end
 
   def test_order_cant_have_a_table_id_of_more_than_9

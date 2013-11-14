@@ -50,6 +50,7 @@ group :test do
   gem 'jazz_hands'
   gem 'minitest-colorize'
   gem 'minitest-focus'
+  gem 'simplecov', :require => false
 end
 
 # Use ActiveModel has_secure_password

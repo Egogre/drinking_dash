@@ -22,7 +22,6 @@ class IndexIntegrationTest < Capybara::Rails::TestCase
 
   #contact button
   def test_contact_is_a_link
-    skip
     visit root_path
     click_on 'Contact'
     assert_equal current_path, contact_path
@@ -57,8 +56,6 @@ class IndexIntegrationTest < Capybara::Rails::TestCase
 
     click_on("Sign Out")
     assert_equal current_path, root_path
-
-
   end
 
 end

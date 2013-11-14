@@ -41,13 +41,15 @@ drinks.each do |drink|
 end
 
 users.each do |user|
- new_user = User.find_or_create_by_email(user)
- sash = Merit::Sash.create unless new_user.sash_id
- new_user.sash_id = sash.id
- new_user.save
+  new_user = User.find_or_create_by_email(user)
+  unless new_user.sash_id
+    sash = Merit::Sash.create
+    new_user.sash_id = sash.id
+  end
+  new_user.save
 end
 
-don = User.find_by(name: "Don").id
+don = User.first.id
 
 old_f  = Drink.find_by(name: "An Old Fashioned").id
 order = Order.create(user_id: don, status: 'paid')

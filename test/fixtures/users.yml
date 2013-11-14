@@ -13,3 +13,4 @@ three:
   name: Rolen
   email: rolen@example.com
   password_digest: $2a$10$EZtJermuxcVCkAHsPiA0Iu6zNlJKKpz3d.WrNMqaRbb/P9Wy7w0FC
+  admin_role: true
