@@ -40,7 +40,7 @@ rake db:test:purge
 #####Version in Production
 Visit [this heroku site]( https://desolate-plateau-1371.herokuapp.com/) for a live version.
 
-#####Code Quality
+####Code Quality
 
 ![Alt text](https://www.monosnap.com/image/nHhBywlaT7y2N4dSRRxFt1gst.png)
 
