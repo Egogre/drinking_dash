@@ -48,5 +48,5 @@ Visit [this heroku site]( https://desolate-plateau-1371.herokuapp.com/) for a li
 
 #####Code Climate
 
-Code Climate(https://codeclimate.com/github/Egogre/drinking_dash)
+[link](https://codeclimate.com/github/Egogre/drinking_dash)
 
