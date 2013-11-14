@@ -21,7 +21,7 @@ Drinking Dash is our version of the [Dinner Dash](http://tutorials.jumpstartlab.
 6. Start the Rails sever.
    `rails s`
 
-####Test Version(WIP)
+####Test Version
 Running Tests
 ```ruby
 rake db:migrate
