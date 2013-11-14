@@ -29,6 +29,8 @@ class DrinksController < ApplicationController
   end
 
   def update
+    puts "STUFFF" if params[:commit] == "Add to cart"
+
     if @drink.update(drink_params)
       redirect_to @drink, notice: 'Drink was successfully updated.'
     else

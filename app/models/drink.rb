@@ -9,9 +9,10 @@ class Drink < ActiveRecord::Base
 
   def self.search(search)
     if search
-      find(:all, :conditions => ['name LIKE ?', "%#{search}%"])
+      select { |drink| drink.name =~ /#{search}/i }
+      # find(:all, :conditions => ['name LIKE ?', "%#{search}%"])
     else
-      find(:all)
+      all
     end
   end
 
