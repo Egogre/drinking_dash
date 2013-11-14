@@ -1,7 +1,7 @@
 require "test_helper"
 
 class IndexIntegrationTest < Capybara::Rails::TestCase
-  
+
   def sign_in
     visit root_path
     assert_equal root_path, current_path
@@ -33,5 +33,15 @@ class IndexIntegrationTest < Capybara::Rails::TestCase
     sign_in
     click_on "Profile"
     assert page.has_content?("Jeff")
+  end
+
+  def test_user_can_change_name
+    sign_in
+    click_on "Profile"
+    click_on "Edit"
+
+    fill_in "Name", with: "j3"
+    click_on "Edit Your Information"
+    assert page.has_content?("j3")
   end
 end
