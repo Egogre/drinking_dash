@@ -12,8 +12,8 @@ header#page_header {
   height: 130px;
   overflow: hidden;
   padding: 10px 20px;
-  margin-bottom: 0;
   position: relative;
+  border-bottom: 10px solid #bc4710;
 }
 
 nav#utility {
@@ -22,33 +22,31 @@ nav#utility {
 }
 
 .navbar-form {
-  padding-top: 10px;
+  padding-top: 15px;
   padding-left: 60%;
   margin-right: 0px;
-  padding-bottom: 0;
+  padding-bottom: 0px;
 }
 
 nav#main_nav ul {
+  margin-left: 150px;
+  margin-top: 20px;
   position: absolute;
 }
 
 nav#main_nav {
-  padding: 5px;
-  border-bottom: 10px solid #4c2719;
+  padding-bottom: 15px;
+
   margin: 0;
   text-align: center;
 }
 
-nav#main_nav ul {
-  padding-bottom: 5px;
-}
-
 nav#main_nav li {
-  font-size: 23px;
+  font-size: 30px;
+  font-style: bold;
     background-color: #edeae6;
     display: inline-block;
-    margin: 0px 20px 0px 20px;
-    padding: 6px 16px;
+    padding: 10px 90px;
     border-radius: 10px;
 }
 nav#main_nav a,
