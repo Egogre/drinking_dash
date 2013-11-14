@@ -15,4 +15,13 @@ class Payment < ActiveRecord::Base
     month + full_year[-2..-1]
   end
 
+  def create_new_payment(attributes)
+    self.card_type = attributes[:card_type]
+    self.credit_card_number = attributes[:credit_card_number]
+    self.expiration_date = Payment.format_expiration_date(attributes["expiration_date(2i)"],
+        					      attributes["expiration_date(1i)"])
+    self.user_id = attributes[:user_id]
+    self.save!
+  end
+
 end

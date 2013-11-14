@@ -21,4 +21,14 @@ class PaymentTest < ActiveSupport::TestCase
 		      expiration_date: "2117")
     end
   end
+
+  def test_create_new_payment
+    attributes = {card_type: "Visa", credit_card_number: "1" * 16,
+		  "expiration_date(2i)"=> "10", "expiration_date(1i)" => "2015",
+		  id: 1}
+    payment = Payment.new
+    payment.create_new_payment(attributes)
+    assert_equal "1"* 16, payment.credit_card_number
+    assert_equal "Visa", payment.card_type
+  end
 end

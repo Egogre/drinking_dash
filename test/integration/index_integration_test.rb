@@ -20,13 +20,6 @@ class IndexIntegrationTest < Capybara::Rails::TestCase
     assert_equal current_path, root_path
   end
 
-  #contact button
-  def test_contact_is_a_link
-    visit root_path
-    click_on 'Contact'
-    assert_equal current_path, contact_path
-  end
-
   def test_page_renders_shopping_cart
     visit root_path
     within('#sidebar') do

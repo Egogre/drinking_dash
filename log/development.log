@@ -1512,3 +1512,96 @@ DEPRECATION WARNING: This dynamic method is deprecated. Please use e.g. Post.fin
   [1m[36m (0.2ms)[0m  [1mBEGIN[0m
   [1m[35mSQL (1.0ms)[0m  INSERT INTO "order_items" ("created_at", "drink_id", "order_id", "quantity", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Thu, 14 Nov 2013 01:09:39 UTC +00:00], ["drink_id", 10], ["order_id", 116], ["quantity", 100], ["updated_at", Thu, 14 Nov 2013 01:09:39 UTC +00:00]]
   [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for 127.0.0.1 at 2013-11-13 20:03:25 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+  [1m[35mUser Load (1.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'e3f7b61b85dd79af1ddda802a5b7ada7935b388d' LIMIT 1
+  Rendered layouts/_search.html.erb (1.1ms)
+  Rendered layouts/_main_nav.html.erb (3.5ms)
+  Rendered layouts/_header.html.erb (47.1ms)
+  [1m[36mOrder Load (0.8ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" IS NULL LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (7.1ms)[0m  [1mINSERT INTO "orders" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", Thu, 14 Nov 2013 03:03:25 UTC +00:00], ["updated_at", Thu, 14 Nov 2013 03:03:25 UTC +00:00]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36mOrderItem Load (1.0ms)[0m  [1mSELECT "order_items".* FROM "order_items" WHERE "order_items"."order_id" = $1[0m  [["order_id", 11]]
+  Rendered layouts/_sidebar.html.erb (47.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 364ms (Views: 321.1ms | ActiveRecord: 17.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-11-13 20:03:25 -0700
+
+
+Started GET "/assets/static.css?body=1" for 127.0.0.1 at 2013-11-13 20:03:25 -0700
+
+
+Started GET "/assets/dashboard.css?body=1" for 127.0.0.1 at 2013-11-13 20:03:26 -0700
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-11-13 20:03:26 -0700
+
+
+Started GET "/assets/form.css?body=1" for 127.0.0.1 at 2013-11-13 20:03:26 -0700
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2013-11-13 20:03:26 -0700
+
+
+Started GET "/assets/sidebar.css?body=1" for 127.0.0.1 at 2013-11-13 20:03:26 -0700
+
+
+Started GET "/assets/navigation.css?body=1" for 127.0.0.1 at 2013-11-13 20:03:26 -0700
+
+
+Started GET "/assets/shopping_cart.css?body=1" for 127.0.0.1 at 2013-11-13 20:03:26 -0700
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2013-11-13 20:03:26 -0700
+
+
+Started GET "/assets/order_page.css?body=1" for 127.0.0.1 at 2013-11-13 20:03:26 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-11-13 20:03:26 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-11-13 20:03:26 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-11-13 20:03:26 -0700
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2013-11-13 20:03:26 -0700
+
+
+Started GET "/assets/dashboard.js?body=1" for 127.0.0.1 at 2013-11-13 20:03:26 -0700
+
+
+Started GET "/assets/drinks.js?body=1" for 127.0.0.1 at 2013-11-13 20:03:26 -0700
+
+
+Started GET "/assets/order_items.js?body=1" for 127.0.0.1 at 2013-11-13 20:03:26 -0700
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2013-11-13 20:03:26 -0700
+
+
+Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2013-11-13 20:03:26 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-11-13 20:03:26 -0700
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2013-11-13 20:03:26 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-11-13 20:03:26 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-11-13 20:03:26 -0700
+
+
+Started GET "/assets/logo_basic_l.png" for 127.0.0.1 at 2013-11-13 20:03:26 -0700
