@@ -33,6 +33,8 @@ rake db:test:load
 
 To purge the test database - run
 
+[Code Coverage](https://www.monosnap.com/image/nHhBywlaT7y2N4dSRRxFt1gst, "Code Coverage!") 
+
 ```ruby
 rake db:test:purge
 ```
