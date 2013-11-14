@@ -13,13 +13,6 @@ class IndexIntegrationTest < Capybara::Rails::TestCase
     assert_equal current_path, categories_path
   end
 
-  #home button
-  def test_home_is_a_link
-    visit root_path
-    click_on 'Home'
-    assert_equal current_path, root_path
-  end
-
   def test_page_renders_shopping_cart
     visit root_path
     within('#sidebar') do
