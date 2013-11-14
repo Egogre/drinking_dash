@@ -1,10 +1,15 @@
-<% provide(:title, 'Drinks') %>
-<ul>
-<% @drinks.each do |drink|  %>
-  <li><%= drink.name %>: <%= number_to_currency drink.price %><br />
-  <%= drink.description %>
-  </li>
-<% end %>
-</ul>
-
 <%= link_to 'New Drink', new_drink_path %>
+
+<% provide(:title, 'Drinks') %>
+<%= render 'categories/breadcrumbs' %>
+<ul class='categories'>
+    <% @drinks.each do |drink| %>
+      <%= link_to(drink) do %>
+      <li id="drink_<%=drink.id %>">
+      <%= drink.name %>: <%= number_to_currency drink.price %> <br/>
+      <%= drink.description %>
+      <%= button_to "Add to cart", order_items_path(drink_id: drink.id) %>
+      </li>
+    <% end %>
+  <% end %>
+</ul>
