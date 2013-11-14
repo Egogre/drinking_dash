@@ -42,5 +42,11 @@ Visit [this heroku site]( https://desolate-plateau-1371.herokuapp.com/) for a li
 
 ####Code Quality
 
-![Alt text](https://www.monosnap.com/image/nHhBywlaT7y2N4dSRRxFt1gst.png)
+#####SimpleCov
+  
+![Code Coverage](https://www.monosnap.com/image/nHhBywlaT7y2N4dSRRxFt1gst.png)
+
+#####Code Climate
+
+Code Climate(https://codeclimate.com/github/Egogre/drinking_dash)
 
