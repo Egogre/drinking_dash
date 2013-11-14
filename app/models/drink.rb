@@ -6,6 +6,15 @@ class Drink < ActiveRecord::Base
   validates :price, presence: true, numericality: { greater_than: 0 }
   validates :image_url, format: { with: /\A(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?\z/ix, if: :image_url_present? }
 
+
+  def self.search(search)
+    if search
+      find(:all, :conditions => ['name LIKE ?', "%#{search}%"])
+    else
+      find(:all)
+    end
+  end
+
   private
 
   def image_url_present?

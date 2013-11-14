@@ -3,7 +3,7 @@ class DrinksController < ApplicationController
   before_action :admin_authorization, only: [:edit, :update, :new, :create, :destroy]
 
   def index
-    @drinks = Drink.all
+    @drinks = Drink.search(params[:search])
   end
 
   def show
