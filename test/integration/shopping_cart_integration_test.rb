@@ -81,7 +81,6 @@ class ShoppingCartIntegrationTest < Capybara::Rails::TestCase
 
       click_on "Place Order"
       assert page.has_content?("$19.99"), "grand total not showing"
-      assert page.has_content?("Pay Us, Bitches!"), "On right page"
       select "American Express", from: "Card Type"
       fill_in "Credit Card Number", with: "1234123412341234"
       select "2014", from: "payment_expiration_date_1i"
