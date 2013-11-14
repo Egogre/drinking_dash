@@ -38,4 +38,4 @@ rake db:test:purge
 ```
 
 #####Version in Production
-Visit [divebar.herokuapp.com](https://divebar.herokuapp.com/) for a live version.
+Visit[this heroku site]( https://desolate-plateau-1371.herokuapp.com/) for a live version.

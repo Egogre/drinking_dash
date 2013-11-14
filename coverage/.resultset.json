@@ -540,7 +540,7 @@
         null
       ]
     },
-    "timestamp": 1384463241
+    "timestamp": 1384463476
   },
   "Integration Tests": {
     "coverage": {
@@ -1282,7 +1282,7 @@
         null
       ]
     },
-    "timestamp": 1384463250
+    "timestamp": 1384463486
   },
   "MiniTest": {
     "coverage": {
