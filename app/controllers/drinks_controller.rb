@@ -16,13 +16,11 @@ class DrinksController < ApplicationController
   def create
     @drink = Drink.new(drink_params)
 
-    respond_to do |format|
-      if @drink.save
-        format.html { redirect_to @drink, notice: 'Drink was successfully created.' }
-        flash.notice = "New Drink, '#{@drink.name}', Created!"
-      else
-        format.html { render action: 'new' }
-      end
+    if @drink.save
+      redirect_to @drink, notice: 'Drink was successfully created.'
+      flash.notice = "New Drink, '#{@drink.name}', Created!"
+    else
+      render action: 'new'
     end
   end
 
@@ -30,12 +28,10 @@ class DrinksController < ApplicationController
   end
 
   def update
-    respond_to do |format|
-      if @drink.update(drink_params)
-        format.html { redirect_to @drink, notice: 'Drink was successfully updated.' }
-      else
-        format.html { render action: 'edit' }
-      end
+    if @drink.update(drink_params)
+      redirect_to @drink, notice: 'Drink was successfully updated.'
+    else
+      render action: 'edit'
     end
   end
 

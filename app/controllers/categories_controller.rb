@@ -18,12 +18,10 @@ class CategoriesController < ApplicationController
   end
 
   def update
-    respond_to do |format|
-      if @category.update(category_params)
-        format.html { redirect_to @category, notice: 'Category was successfully updated.' }
-      else
-        format.html { render action: 'edit' }
-      end
+    if @category.update(category_params)
+      redirect_to @category, notice: 'Category was successfully updated.'
+    else
+      render action: 'edit'
     end
   end
 
