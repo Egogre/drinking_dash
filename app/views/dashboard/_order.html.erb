@@ -1,0 +1,10 @@
+<h1>Orders</h1>
+<ul>
+<% @orders.each do |order| %>
+  <li><%= order.user.name %>: <%= number_to_currency order.grand_total %>: <%= order.status %></li>
+  <% if order.status == "paid" %>
+           <h4><%= button_to "Confirm Transaction Complete", dashboard_path, method: "complete_transaction", :class => "complete_button" %></h4>
+           <h4><%= button_to "Cancel Order?", dashboard_path, method: "cancel_transaction", :class => "cancel_button" %></h4>
+           <% end %>
+<% end%>
+</ul>
